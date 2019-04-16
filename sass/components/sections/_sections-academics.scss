@@ -1,0 +1,1229 @@
+/* _sections-academics.scss */
+
+/* ACADEMICS.HTML
+-------------------------------------------------- */
+/* UD PREVIEW */
+/* HASS PREVIEW */
+/* ISED PREVIEW */
+/* CC PREVIEW */
+/* UIC-PROGRAMS PREVIEW */
+/* STUDY-ABROAD PREVIEW */
+
+.ud-preview,
+.hass-preview,
+.ised-preview,
+.cc-preview,
+.programs-preview,
+.study-abroad-preview {
+  > h2 {
+    margin: 0;
+    padding: 0 2em;
+    text-align: center;
+    @include desktop {
+      padding: 0 4em;
+    }
+  }
+  > p {
+    margin: .75em 0;
+    padding-left: calc(10% + 20px);
+    padding-right: calc(10% + 20px);
+    @include tablet {
+      padding-left: calc(20% + 20px);
+      padding-right: calc(20% + 20px);
+    }
+  }
+  > img {
+    display: block;
+    margin: 0 auto 2em auto;
+    height: 18em;
+    width: calc(90% - 40px);
+    object-fit: cover;
+    @include mobile--sm {
+      height: 14em;
+    }
+    @include tablet {
+      height: 20em;
+      width: calc(75% - 40px);
+    }
+    @include desktop {
+      height: 25em;
+    }
+  }
+}
+
+.ud-preview {
+  background: #fff;
+}
+
+.hass-preview {
+  background: #f9f6ef;
+}
+
+.ised-preview {
+  background: #fff;
+}
+
+.cc-preview {
+  background: #f9f6ef;
+}
+
+.programs-preview {
+  background: #fff;
+}
+
+.study-abroad-preview {
+  background: #f9f6ef;
+}
+
+/* UD.HTML
+   CLC.HTML
+   ECON.HTML
+   IS.HTML
+   PSIR.HTML
+   LSBT.HTML
+   ASD.HTML
+   IID.HTML
+   CTM.HTML
+   CDM.HTML
+   JCL.HTML
+   QRM.HTML
+   STP.HTML
+   SDC.HTML
+   STUDY-ABROAD.HTML
+-------------------------------------------------- */
+.division-introduction {
+  padding-left: calc(5% + 20px);
+  padding-right: calc(5% + 20px);
+  @include tablet {
+    padding-left: calc(12.5% + 20px);
+    padding-right: calc(12.5% + 20px);
+  }
+  > p {
+    > a {
+      text-decoration: none;
+      &:link, 
+      &:visited {
+        color: #3277ae;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        color: #be0f34;
+      } 
+    }
+  }
+}
+
+.major {
+  > h2 {
+    padding: 0 2em;
+    text-align: center;
+  }
+  > img {
+    display: block;
+    margin: 0 auto;
+    height: 18em;
+    width: calc(90% - 40px);
+    object-fit: cover;
+    @include mobile--sm {
+      height: 14em;
+    }
+    @include tablet {
+      height: 20em;
+      width: calc(75% - 40px);
+    }
+    @include desktop {
+      height: 25em;
+    }
+  }
+}
+
+.major-input {
+  display: none;
+}
+
+.major-labels {
+  width: calc(90% - 40px);
+  margin: 1em auto;
+  @include tablet {
+    width: calc(75% - 40px);
+  }
+  > label {
+    float: left;
+    width: 25%;
+    padding: .5em;
+    line-height: 1.5;
+    text-align: center;
+    @include mobile--sm {
+      font-size: .85rem;
+    }
+    @include tablet {
+      padding: .75em;
+    }
+    @include desktop {
+      padding: 1em;
+    }
+    &:hover {
+      color: #2ab1e2;
+      cursor: pointer;
+    }
+    &:nth-child(odd) {
+      background: #ddd;
+    }
+    &:nth-child(even) {
+      background: #ececec;
+    }
+    > svg {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.info {
+  display: none;
+  padding-left: calc(5% + 20px);
+  padding-right: calc(5% + 20px);
+  @include tablet {
+    padding-left: calc(12.5% + 20px);
+    padding-right: calc(12.5% + 20px);
+  }
+  > p {
+    a {
+      display: block;
+      margin-top: 1em;
+      max-width: 20em;
+      max-width: fit-content;
+      text-decoration: none;
+      &:link, 
+      &:visited {
+        color: #3277ae;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        color: #be0f34;
+      } 
+    }
+  }
+}
+
+/* UD.HTML
+   ISED.HTML
+   TAD.HTML
+   ISSD.HTML
+   STUDY-ABROAD.HTML
+   ACADEMIC-REGULATIONS.HTML
+   HEALTH-AND-COUNSELING.HTML
+-------------------------------------------------- */
+
+.ud-overview,
+.ised-overview,
+.tad-overview,
+.issd-overview,
+.study-abroad-overview,
+.academic-regulations-overview,
+.health-and-counseling-overview {
+  > h2 {
+    color: #000;
+    text-align: center;
+  }
+  &__grid {
+    > figure {
+      margin: 1.75em;
+      padding: 2em;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15), 0 3px 3px rgba(0, 0, 0, 0.15);
+      > svg {
+        width: 100%!important; // overrides inline style from font-awesome
+      }
+      > figcaption {
+        margin-top: 1em;
+        text-align: center;
+        > a {
+          text-decoration: none;
+          &:link,
+          &:visited {
+            color: #006cb8;
+          }
+          &:hover,
+          &:focus,
+          &:active {
+            color: #00548f;
+            text-decoration: underline;
+          }
+          > svg {
+            margin: 0 0 0 .25em;
+          }
+          &:hover svg,
+          &:focus svg,
+          &:active svg {
+            margin: 0 0 0 .5em;
+            transition: margin .25s ease;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* CC.HTML
+   UIC-PROGRAMS.HTML
+-------------------------------------------------- */
+.cc-overview,
+.programs-overview {
+  > h2 {
+    color: #000;
+    text-align: center;
+  }
+  &__grid {
+    > a,
+      a:link,
+      a:visited {
+      position: relative;
+      display: block;
+      margin: 1.75em;
+      @include tablet {
+        margin: 1em;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        > figure {
+          overflow: hidden;
+          .preview-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: #000;
+            opacity: .4;
+            z-index: 1;
+          }
+          > figcaption {
+            z-index: 2;
+          }
+        }
+      }
+      > figure {
+        position: relative;
+        margin: 0;
+        > img {
+          width: 100%;
+          height: 20em;
+          object-fit: cover;
+          @include mobile--sm {
+            height: 14em;
+          }
+          @include tablet {
+            height: 14em;
+          }
+          @include desktop {
+            height: 18em;
+          }
+        }
+        > figcaption {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          padding: .5em;
+          background: #333;
+          color: #fff;
+          text-align: center;
+          > h3 {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* UD.HTML
+-------------------------------------------------- */
+/* UD */
+.ud-overview {
+  background: #f9f6ef;
+}
+
+/* CLC.HTML
+-------------------------------------------------- */
+/* CLC */
+#introduction-input-clc:checked ~ .info--clc-introduction,
+#curriculum-input-clc:checked ~ .info--clc-curriculum,
+#careers-input-clc:checked ~ .info--clc-careers,
+#faculty-input-clc:checked ~ .info--clc-faculty {
+  display: block;
+}
+
+.major--clc {
+  background: #fff;
+  .info {
+    min-height: 36em;
+    @include tablet {
+      min-height: 22em;
+    }
+    @include desktop {
+      min-height: 20em;
+    }
+    @include desktop--lg {
+      min-height: 19em;  
+    }
+  }
+}
+
+/* ECON.HTML
+-------------------------------------------------- */
+/* ECON */
+#introduction-input-econ:checked ~ .info--econ-introduction,
+#curriculum-input-econ:checked ~ .info--econ-curriculum,
+#careers-input-econ:checked ~ .info--econ-careers,
+#faculty-input-econ:checked ~ .info--econ-faculty,{
+  display: block;
+}
+
+.major--econ {
+  background: #fff;
+  .info {
+    min-height: 39em;
+    @include tablet {
+      min-height: 23em;
+    }
+    @include desktop {
+      min-height: 20em;
+    }
+    @include desktop--lg {
+      min-height: 18em;  
+    }
+  }
+}
+
+/* IS.HTML
+-------------------------------------------------- */
+/* IS */
+#introduction-input-is:checked ~ .info--is-introduction,
+#curriculum-input-is:checked ~ .info--is-curriculum,
+#careers-input-is:checked ~ .info--is-careers,
+#faculty-input-is:checked ~ .info--is-faculty {
+  display: block;
+}
+
+.major--is {
+  background: #fff;
+  .info {
+    min-height: 40em;
+    @include tablet {
+      min-height: 25em;
+    }
+    @include desktop {
+      min-height: 22em;
+    }
+    @include desktop--lg {
+      min-height: 20em;  
+    }
+  }
+}
+
+/* PSIR.HTML
+-------------------------------------------------- */
+/* PSIR */
+#introduction-input-psir:checked ~ .info--psir-introduction,
+#curriculum-input-psir:checked ~ .info--psir-curriculum,
+#careers-input-psir:checked ~ .info--psir-careers,
+#faculty-input-psir:checked ~ .info--psir-faculty {
+  display: block;
+}
+
+.major--psir {
+  background: #fff;
+  .info {
+    min-height: 28em;
+    @include tablet {
+      min-height: 17em;
+    }
+    @include desktop {
+      min-height: 15em;
+    }
+  }
+}
+
+/* LSBT.HTML
+-------------------------------------------------- */
+/* LSBT */
+#introduction-input-lsbt:checked ~ .info--lsbt-introduction,
+#curriculum-input-lsbt:checked ~ .info--lsbt-curriculum,
+#careers-input-lsbt:checked ~ .info--lsbt-careers,
+#faculty-input-lsbt:checked ~ .info--lsbt-faculty,{
+  display: block;
+}
+
+.major--lsbt {
+  background: #fff;
+  .info {
+    min-height: 45em;
+    @include tablet {
+      min-height: 28em;
+    }
+    @include desktop {
+      min-height: 24em;
+    }
+    @include desktop--lg {
+      min-height: 21em;  
+    }
+  }
+}
+
+/* HASS.HTML
+-------------------------------------------------- */
+#division-introduction--hass {
+  padding-bottom: 0;
+}
+.hass-divisions-preview {
+  background: #fff;
+  padding: 0 0 2em 0;
+  &__grid {
+    margin: 0 0 1.75em 0;
+    padding-left: calc(5% + 20px);
+    padding-right: calc(5% + 20px);
+    @include tablet {
+      padding-left: calc(10.5% + 20px);
+      padding-right: calc(10.5% + 20px);
+    }
+    @include desktop--lg {
+      padding-left: calc(11.25% + 20px);
+      padding-right: calc(11.25% + 20px);
+    }
+    > figure {
+      margin: 2em auto 1em auto;
+      @include tablet {
+        padding: 0 1em; 
+      }
+      > img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+      }
+      > figcaption {
+        margin: 1em 0 0 0;
+        > a {
+          text-decoration: none;
+          &:link,
+          &:visited {
+            color: #006cb8;
+          }
+          &:hover,
+          &:focus,
+          &:active {
+            color: #00548f;
+            text-decoration: underline;
+          }
+          > svg {
+            margin: 0 0 0 .25em;
+          }
+          &:hover svg,
+          &:focus svg,
+          &:active svg {
+            margin: 0 0 0 .5em;
+            transition: margin .25s ease;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ASD.HTML
+-------------------------------------------------- */
+/* ASD */
+#introduction-input-asd:checked ~ .info--asd-introduction,
+#curriculum-input-asd:checked ~ .info--asd-curriculum,
+#careers-input-asd:checked ~ .info--asd-careers,
+#faculty-input-asd:checked ~ .info--asd-faculty {
+  display: block;
+}
+
+.major--asd {
+  background: #f9f6ef;
+  .info {
+    min-height: 37em;
+    @include tablet {
+      min-height: 22em;
+    }
+    @include desktop {
+      min-height: 20em;
+    }
+    @include desktop--lg {
+      min-height: 18em;
+    }
+  }
+}
+
+/* TAD.HTML
+-------------------------------------------------- */
+/* TAD */
+.tad-overview {
+  background: #f9f6ef;    
+}
+
+/* IID.HTML
+-------------------------------------------------- */
+/* IID */
+#introduction-input-iid:checked ~ .info--iid-introduction,
+#curriculum-input-iid:checked ~ .info--iid-curriculum,
+#careers-input-iid:checked ~ .info--iid-careers,
+#faculty-input-iid:checked ~ .info--iid-faculty {
+  display: block;
+}
+
+.major--iid {
+  background: #fff;
+  .info {
+    min-height: 53em;
+    @include tablet {
+      min-height: 28em;
+    }
+    @include desktop {
+      min-height: 26em;
+    }
+    @include desktop--lg {
+      min-height: 23em;
+    }
+  }
+}
+
+/* CTM.HTML
+-------------------------------------------------- */
+/* CTM */
+#introduction-input-ctm:checked ~ .info--ctm-introduction,
+#curriculum-input-ctm:checked ~ .info--ctm-curriculum,
+#careers-input-ctm:checked ~ .info--ctm-careers,
+#faculty-input-ctm:checked ~ .info--ctm-faculty {
+  display: block;
+}
+
+.major--ctm {
+  background: #fff;
+  .info {
+    min-height: 36em;
+    @include tablet {
+      min-height: 23em;
+    }
+    @include desktop {
+      min-height: 20em;
+    }
+    @include desktop--lg {
+      min-height: 19em;
+    }
+  }
+}
+
+/* CDM.HTML
+-------------------------------------------------- */
+/* CDM */
+#introduction-input-cdm:checked ~ .info--cdm-introduction,
+#curriculum-input-cdm:checked ~ .info--cdm-curriculum,
+#careers-input-cdm:checked ~ .info--cdm-careers,
+#faculty-input-cdm:checked ~ .info--cdm-faculty {
+  display: block;
+}
+
+.major--cdm {
+  background: #fff;
+  .info {
+    min-height: 32em;
+    @include tablet {
+      min-height: 21em;
+    }
+    @include desktop {
+      min-height: 18em;
+    }
+    @include desktop--lg {
+      min-height: 16em;
+    }
+  }
+}
+
+/* ISSD.HTML
+-------------------------------------------------- */
+/* ISSD */
+.issd-overview {
+  background: #f9f6ef;
+}
+
+/* JCL.HTML
+-------------------------------------------------- */
+/* JCL */
+#introduction-input-jcl:checked ~ .info--jcl-introduction,
+#curriculum-input-jcl:checked ~ .info--jcl-curriculum,
+#careers-input-jcl:checked ~ .info--jcl-careers,
+#faculty-input-jcl:checked ~ .info--jcl-faculty {
+  display: block;
+}
+
+.major--jcl {
+  background: #fff;
+  .info {
+    min-height: 43em;
+    @include tablet {
+      min-height: 25em;
+    }
+    @include desktop {
+      min-height: 22em;
+    }
+    @include desktop--lg {
+      min-height: 21em;
+    }
+  }
+}
+
+/* QRM.HTML
+-------------------------------------------------- */
+/* QRM */
+#introduction-input-qrm:checked ~ .info--qrm-introduction,
+#curriculum-input-qrm:checked ~ .info--qrm-curriculum,
+#careers-input-qrm:checked ~ .info--qrm-careers,
+#faculty-input-qrm:checked ~ .info--qrm-faculty {
+  display: block;
+}
+
+.major--qrm {
+  background: #fff;
+  .info {
+    min-height: 45em;
+    @include tablet {
+      min-height: 27em;
+    }
+    @include desktop {
+      min-height: 24em;
+    }
+    @include desktop--lg {
+      min-height: 23em;
+    }
+  }
+}
+
+/* STP.HTML
+-------------------------------------------------- */
+/* STP */
+#introduction-input-stp:checked ~ .info--stp-introduction,
+#curriculum-input-stp:checked ~ .info--stp-curriculum,
+#careers-input-stp:checked ~ .info--stp-careers,
+#faculty-input-stp:checked ~ .info--stp-faculty {
+  display: block;
+}
+
+.major--stp {
+  background: #fff;
+  .info {
+    min-height: 32em;
+    @include tablet {
+      min-height: 22em;
+    }
+    @include desktop {
+      min-height: 18em;
+    }
+    @include desktop--lg {
+      min-height: 17em;
+    }
+  }
+}
+
+/* SDC.HTML
+-------------------------------------------------- */
+/* SDC */
+#introduction-input-sdc:checked ~ .info--sdc-introduction,
+#curriculum-input-sdc:checked ~ .info--sdc-curriculum,
+#careers-input-sdc:checked ~ .info--sdc-careers,
+#faculty-input-sdc:checked ~ .info--sdc-faculty {
+  display: block;
+}
+
+.major--sdc {
+  background: #fff;
+  .info {
+    min-height: 39em;
+    @include tablet {
+      min-height: 22em;
+    }
+    @include desktop {
+      min-height: 20em;
+    }
+    @include desktop--lg {
+      min-height: 18em;
+    }
+  }
+}
+
+/* ISED.HTML
+-------------------------------------------------- */
+/* ISED */
+.ised-overview {
+  background: #f9f6ef;
+}
+
+/* NSE.HTML
+-------------------------------------------------- */
+/* NSE */
+#introduction-input-nse:checked ~ .info--nse-introduction,
+#curriculum-input-nse:checked ~ .info--nse-curriculum,
+#careers-input-nse:checked ~ .info--nse-careers,
+#faculty-input-nse:checked ~ .info--nse-faculty {
+  display: block;
+}
+
+.major--nse {
+  background: #fff;
+  .info {
+    min-height: 36em;
+    @include tablet {
+      min-height: 21em;
+    }
+    @include desktop {
+      min-height: 18em;
+    }
+    @include desktop--lg {
+      min-height: 17em;
+    }
+  }
+}
+
+/* EESE.HTML
+-------------------------------------------------- */
+/* EESE */
+#introduction-input-eese:checked ~ .info--eese-introduction,
+#curriculum-input-eese:checked ~ .info--eese-curriculum,
+#careers-input-eese:checked ~ .info--eese-careers,
+#faculty-input-eese:checked ~ .info--eese-faculty {
+  display: block;
+}
+
+.major--eese {
+  background: #fff;
+  .info {
+    min-height: 38em;
+    @include tablet {
+      min-height: 21em;
+    }
+    @include desktop {
+      min-height: 18em;
+    }
+    @include desktop--lg {
+      min-height: 17em;
+    }
+  }
+}
+
+/* BC.HTML
+-------------------------------------------------- */
+/* BC */
+#introduction-input-bc:checked ~ .info--bc-introduction,
+#curriculum-input-bc:checked ~ .info--bc-curriculum,
+#careers-input-bc:checked ~ .info--bc-careers,
+#faculty-input-bc:checked ~ .info--bc-faculty {
+  display: block;
+}
+
+.major--bc {
+  background: #fff;
+  .info {
+    min-height: 37em;
+    @include tablet {
+      min-height: 22em;
+    }
+    @include desktop {
+      min-height: 21em;
+    }
+    @include desktop--lg {
+      min-height: 18em;
+    }
+  }
+}
+
+/* CC.HTML
+-------------------------------------------------- */
+.cc-introduction {
+  padding-left: calc(5% + 20px);
+  padding-right: calc(5% + 20px);
+  @include tablet {
+    padding-left: calc(12.5% + 20px);
+    padding-right: calc(12.5% + 20px);
+  }
+}
+
+.cc-overview {
+  background: #f9f6ef;
+}
+
+.cc-course {
+  > h2 {
+    text-align: center;
+  }
+  > img {
+    display: block;
+    margin: 0 auto;
+    height: 18em;
+    width: calc(90% - 40px);
+    object-fit: cover;
+    @include mobile--sm {
+      height: 14em;
+    }
+    @include tablet {
+      height: 20em;
+      width: calc(75% - 40px);
+    }
+    @include desktop {
+      height: 25em;
+    }
+  }
+  > p {
+    padding-left: calc(5% + 20px);
+    padding-right: calc(5% + 20px);
+    @include tablet {
+      padding-left: calc(12.5% + 20px);
+      padding-right: calc(12.5% + 20px);
+    }
+  }
+}
+
+/* CHAPEL.HTML
+-------------------------------------------------- */
+/* CHAPEL */
+.cc-course--chapel {
+  background: #fff;
+}
+
+/* YONSEI-RC-101.HTML
+-------------------------------------------------- */
+/* YONSEI-RC-101 */
+.cc-course--yrc101 {
+  background: #fff;
+}
+
+/* SOCIAL-INNOVATION.HTML
+-------------------------------------------------- */
+/* SOCIAL-INNOVATION */
+.cc-course--social-innovation {
+  background: #fff;
+}
+
+/* UNDERSTANDING-CHRISTIANITY.HTML
+-------------------------------------------------- */
+/* UNDERSTANDING-CHRISTIANITY */
+.cc-course--understanding-christianity {
+  background: #fff;
+}
+
+/* FWIS.HTML
+-------------------------------------------------- */
+/* FWIS */
+.cc-course--fwis {
+  background: #fff;
+}
+
+/* CR.HTML
+-------------------------------------------------- */
+/* CR */
+.cc-course--cr {
+  background: #fff;
+}
+
+/* RDQM.HTML
+-------------------------------------------------- */
+/* RDQM */
+.cc-course--rdqm {
+  background: #fff;
+}
+
+/* SL.HTML
+-------------------------------------------------- */
+/* SL */
+.cc-course--sl {
+  background: #fff;
+}
+
+/* LHP.HTML
+-------------------------------------------------- */
+/* LHP */
+.cc-course--lhp {
+  background: #fff;
+}
+
+/* WC.HTML
+-------------------------------------------------- */
+/* WC */
+.cc-course--wc {
+  background: #fff;
+}
+
+/* EC.HTML
+-------------------------------------------------- */
+/* EC */
+.cc-course--ec {
+  background: #fff;
+}
+
+/* UIC-SEMINARS.HTML
+-------------------------------------------------- */
+/* UIC SEMINARS */
+.cc-course--uic-seminars {
+  background: #fff;
+}
+
+
+/* UIC-PROGRAMS.HTML
+-------------------------------------------------- */
+.programs-introduction {
+  padding-left: calc(5% + 20px);
+  padding-right: calc(5% + 20px);
+  @include tablet {
+    padding-left: calc(12.5% + 20px);
+    padding-right: calc(12.5% + 20px);
+  }
+}
+
+.programs-overview {
+  background: #f9f6ef;
+}
+
+.program {
+  padding-left: calc(5% + 20px);
+  padding-right: calc(5% + 20px);
+  @include tablet {
+    padding-left: calc(12.5% + 20px);
+    padding-right: calc(12.5% + 20px);
+  }
+  > h2 {
+    text-align: center;
+  }
+  > img {
+    display: block;
+    margin: 0 auto;
+    height: 18em;
+    width: 100%;
+    object-fit: cover;
+    @include mobile--sm {
+      height: 14em;
+    }
+    @include tablet {
+      height: 20em;
+    }
+    @include desktop {
+      height: 25em;
+    }
+  }
+  > p {
+    a {
+      display: block;
+      margin-top: 1em;
+      width: fit-content!important;
+      text-decoration: none;
+      &:link, 
+      &:visited {
+        color: #3277ae;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        color: #be0f34;
+      } 
+    }
+  }
+}
+
+/* GCT.HTML
+-------------------------------------------------- */
+/* GCT */
+.program--gct {
+  background: #fff;
+}
+
+/* GRC.HTML
+-------------------------------------------------- */
+/* GRC */
+.program--grc {
+  background: #fff;
+}
+
+/* URP.HTML
+-------------------------------------------------- */
+/* URP */
+.program--urp {
+  background: #fff;
+}
+
+/* WIC.HTML
+-------------------------------------------------- */
+/* WIC */
+.program--wic {
+  background: #fff;
+}
+
+/* KSM.HTML
+-------------------------------------------------- */
+/* KSM */
+.program--ksm {
+  background: #fff;
+}
+
+/* CWC.HTML
+-------------------------------------------------- */
+/* CWC */
+.program--cwc {
+  background: #fff;
+  > p {
+    > a {
+      text-decoration: none;
+      &:link, 
+      &:visited {
+        color: #3277ae;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        color: #be0f34;
+      } 
+    }
+  }
+  > ul {
+    padding-left: calc(12.5% + 20px);
+    padding-right: calc(12.5% + 20px);
+    line-height: 1.5;
+    @include tablet {
+      padding-left: calc(12.5% + 60px);
+    }
+  }
+}
+
+/* SENIOR-THESIS.HTML
+-------------------------------------------------- */
+/* SENIOR-THESIS */
+.cc-course--senior-thesis {
+  background: #fff;
+}
+
+/* STUDY-ABROAD.HTML
+-------------------------------------------------- */
+/* STUDY-ABROAD OVERVIEW */
+.study-abroad-overview {
+  background: #f9f6ef;
+}
+
+/* EXCHANGE.HTML */
+/* VSP.HTML */
+/* SAP.HTML */
+/* UIC-EXCLUSIVE.HTML */
+.study-abroad-programs {
+  padding-left: calc(5% + 20px);
+  padding-right: calc(5% + 20px);
+  @include tablet {
+    padding-left: calc(12.5% + 20px);
+    padding-right: calc(12.5% + 20px);
+  }
+  a {
+    text-decoration: none;
+    &:link, 
+    &:visited {
+      color: #3277ae;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      color: #be0f34;
+    } 
+  }
+  li {
+    line-height: 1.5;
+  }
+}
+
+@supports (display: flex) {
+/* ACADEMICS.HTML
+-------------------------------------------------- */
+/* UD PREVIEW */
+/* TAD PREVIEW */
+/* ISSD PREVIEW */
+/* ISED PREVIEW */
+  .ud-overview,
+  .ised-overview,
+  .tad-overview,
+  .issd-overview {
+    &__grid {
+      > figure {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        > figcaption {
+          text-align: left;
+        }
+        @include tablet {
+          flex-flow: row;
+          align-items: center;
+          margin: 1em;
+          > svg {
+            width: .875em!important;
+            margin-right: .18em;
+          }
+          > figcaption {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+
+/* ACADEMIC-CALENDAR.HTML
+-------------------------------------------------- */
+  .year-labels {
+    display: flex;
+    justify-content: flex-end;
+    @include mobile {
+      flex-flow: column;
+    }
+  }
+
+/* UD.HTML
+   HASS.HTML
+   ASD.HTML
+   TAD.HTML
+   ISSD.HTML
+   ISED.HTML
+-------------------------------------------------- */
+  .major-labels {
+    display: flex;
+    justify-content: center;
+    > label {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+    }
+  }
+  
+/* STUDY-ABROAD.HTML
+-------------------------------------------------- */
+/* STUDY-ABROAD OVERVIEW */
+  .study-abroad-overview {
+    &__grid {
+      > figure {
+        display: flex;
+        flex-flow: column;
+        > figcaption {
+          text-align: left;
+        }
+        @include tablet {
+          flex-flow: row;
+          align-items: center;
+          margin: 1em;
+          > svg {
+            width: .875em!important;
+            margin-right: .18em;
+          }
+          > figcaption {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+

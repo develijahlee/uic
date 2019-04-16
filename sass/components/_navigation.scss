@@ -1,0 +1,566 @@
+/* _navigation.scss */
+.nav {
+  background: $primary-bg-dark;
+  &__bar {
+    position: relative;
+    padding: 1em;
+    overflow: hidden; // clearfix
+    @include tablet {
+      position: static; // allows absolutely-positioned ".search-bar" in ".nav-row" to be visible
+      float: left;
+      width: 15%;
+    }
+  }
+  &__cabinet {
+    background: $primary-bg-dark;
+    position: absolute; // containing block is viewport
+    max-height: 0;
+    width: 100%;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    overflow: hidden;
+    transition: max-height .5s linear;
+    z-index: 500; // overlays all content
+    @include tablet {
+      float: left;
+      position: relative;
+      width: 85%;
+      max-height: none;
+      box-shadow: none;
+      overflow: visible;
+    }
+  }
+}
+
+.js-nav__cabinet {
+  max-height: 112em;
+}
+
+.nav-row {
+  position: relative;
+  @include tablet {
+    position: absolute;
+    top: .25em;
+    right: 0;
+  }
+}
+
+.search-bar {
+  position: absolute; // containing block is ".nav-row"
+  top: .7em;
+  right: 2.5em;
+  margin: 0 1em 0 0;
+  height: 2.5em;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 2000; // overlays all content including ".nav__cabinet"
+  @include tablet {
+    position: relative;
+    top: 1.5em;
+    right: 1.25em;
+  }
+  &__text {
+    float: left;
+    padding: .5em;
+    width: 8em;
+    height: 2.5em;
+    border: none;
+    @include tablet {
+      width: 13em;
+    }
+  }
+  &__btn {
+    padding: .5em;
+    width: 2em;
+    height: 2.5em;
+    border: none;
+    background: $search-btn-primary;
+    color: $search-btn-secondary;
+    cursor: pointer;
+  }
+}
+
+.home-link {
+  float: left;
+  padding: .25em;
+  border: 1px solid $nav-drawer-text-secondary;
+  color: $nav-drawer-text-secondary;
+  text-decoration: none;
+  @include tablet {
+    padding: .25em .75em;
+  }
+  &__logo {
+    float: left;
+    margin: 0 .25em 0 0;
+    width: 3em;
+    height: 3em;
+    background: none;
+    @include tablet {
+      float: none;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  &__heading {
+    float: left;
+    margin: .45em 0 0 0;
+    text-align: center;
+    @include tablet {
+      float: none;
+      margin: auto;
+    }
+  }
+}
+
+.mobile-heading {
+  @include tablet {
+    display: none;
+  }
+}
+
+.tablet-heading {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+}
+
+.main-nav-button {
+  float: right;
+  margin: .25em 0 0 0;
+  padding: .75em;
+  width: 3.25em;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  @include tablet {
+    display: none;
+  }
+}
+
+.fa-bars {
+  color: $nav-drawer__btn-arrow-primary;
+}
+
+.fa-angle-down {
+  color: $nav-drawer__btn-arrow-primary;
+  pointer-events: none; // clicking arrow image allows button event
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  &--primary {
+    @include tablet {
+      position: absolute; // containing block is immediate parent ".nav__cabinet"
+      top: 4em;
+    }
+    > .nav-drawer {
+      @include tablet {
+        float: left;
+        &:not(.js-no-hover):hover,
+        &:focus-within {
+          background: #fff;
+        }
+        &:not(.js-no-hover):hover {
+          background: #fff;
+        }
+        &:not(.js-no-hover):hover {
+          background: #fff;
+        }
+        &:not(.js-no-hover):hover > a[href$=".html"],
+        &:focus-within > a[href$=".html"] { // attribute selector resolves specificity conflict
+          color: #333;
+        }
+        &:not(.js-no-hover):hover > a[href$=".html"] { // attribute selector resolves specificity conflict
+          color: #333;
+        }
+        &:not(.js-no-hover):hover > a[href$=".html"] { // attribute selector resolves specificity conflict
+          color: #333;
+        }
+        &:not(.js-no-hover):hover > a[href$=".html"] { // attribute selector resolves specificity conflict
+          color: #333;
+        }
+        &:not(.js-no-hover):hover > a[href$=".html"]:focus { // attribute selector resolves specificity conflict
+          background: none;
+          color: #333; 
+        }
+        > a {
+          &:link, 
+          &:visited {
+            color: $nav-drawer-text-secondary; // specificity conflict; has higher specificity than necessary
+          }
+        }
+        > a:not(.js-no-hover):hover[href$=".html"],
+          a:focus-within[href$=".html"] {
+            color: #fff; // attribute selector resolves specificity conflict
+          }
+        > a:not(.js-no-hover):hover[href$=".html"] {
+            color: #fff; // attribute selector resolves specificity conflict
+          }
+        > a:not(.js-no-hover):hover[href$=".html"] {
+            color: #fff; // attribute selector resolves specificity conflict
+          }
+      }
+      .nav-drawer__list {
+        @include tablet {
+          position: absolute; // removed from doc flow so ".nav-drawer" floats inline
+        }
+      }
+      > a {
+        padding: 1em;
+        @include tablet {
+          padding: .5em;
+        }
+      }
+    }
+  }
+  &--primary:nth-child(1) {
+    border-top: 1px solid $primary-bg;
+    @include tablet {
+      border-top: none;
+    }
+  }
+  &--secondary {
+    overflow: hidden; // clearfix
+    @include tablet {
+      position: absolute;
+      top: 5.25em;
+      right: 2.5em;
+      z-index: 500;
+    }
+    @media (max-width: 1100px) {
+      top: 5.5em;
+    }
+    > .nav-drawer {
+      float: left;
+      width: 50%;
+      &:first-child {
+        background: #00174f;
+      }
+      @include tablet {
+        > a {
+          &:hover, 
+          &:focus,
+          &:active {
+            background: none;
+          }
+        }
+        width: auto;
+      }
+      &--clear {
+       @media (max-width: 1100px) {
+          clear: left;
+        }
+        @include mobile {
+          clear: none;
+        }
+      }
+      &:nth-child(odd) {
+        border-right: 1px solid $primary-bg;
+        @include tablet {
+          border-right: none;
+        }
+      }
+      &:nth-last-child(-n+2) {
+        @include mobile {
+          border-bottom: none!important;
+        }
+      }
+      > a {
+        padding: 1em;
+        @include tablet {
+          padding: .75em;
+        }
+      }
+    }
+  }
+}
+
+.nav-drawer {
+  position: relative;
+  border-bottom: 1px solid $primary-bg;
+  &:hover > a[href$=".html"]:active {
+    text-decoration: none;
+  }
+  @include tablet {
+    border-bottom: none;
+  }
+  &__list {
+    @include tablet {
+      display: none;
+    }
+  }
+  &:hover &__list,
+  &:focus-within &__list {
+    @include tablet {
+      display: block;
+      position: absolute; // containing block is ".nav-drawer"
+      top: 2.8em;
+      left: 0;
+      max-height: none; // fixes bug where ".nav-list--secondary" doesn't show on Edge
+      width: 13em;
+      box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+      z-index: 1000; // overlays ".nav-list--secondary" on hover;
+    }
+  }
+  &:hover &__list {
+    @include tablet {
+      display: block;
+      position: absolute; // containing block is ".nav-drawer"
+      top: 2.8em;
+      left: 0;
+      max-height: none; // fixes bug where ".nav-list--secondary" doesn't show on Edge
+      width: 13em;
+      box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+      z-index: 1000; // overlays ".nav-list--secondary" on hover;
+    }
+  }
+  &:hover &__list.js-no-hover {
+    @include tablet {
+      display: none;
+    }
+  }
+  > a {
+    position: relative; //test
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    &:link, 
+    &:visited {
+      color: $nav-drawer-text-primary;
+    }
+    &:hover,
+    &:focus {
+      background: $primary-bg;
+      color: $nav-drawer-text-secondary;
+    } 
+    &:active {
+      background: $primary-bg;
+      color: $nav-drawer-text-secondary;
+    }
+    @include tablet {
+      display: block;
+      text-align: center;
+    }
+  }
+  &__btn {
+    position: absolute; // containing block is ".nav-drawer"
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 4em;
+    background: $nav-button-primary;
+    border: none;
+    cursor: pointer;
+    &:hover,
+    &:focus,
+    &:active {
+      height: 3.9em;
+      background: $primary-bg;
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+  &__list {
+    padding: 0;
+    max-height: 0;
+    background: $nav-drawer__list-bg-primary;
+    list-style-type: none;
+    overflow: hidden; // clearfix
+    transition: max-height .5s ease-in-out;
+    @include tablet {
+      transition: none;
+      //test
+      max-height: none;
+    }
+    > li:not(:last-child) {
+      border-bottom: 1px solid $nav-button-secondary;
+    }
+    a {
+      display: block;
+      padding: 1em;
+      text-align: left;
+      text-decoration: none;
+      &:link, 
+      &:visited {
+        color: $nav-drawer__list-text-primary;
+      }
+      &:hover,
+      &:focus {
+        background: $nav-drawer__list-bg-secondary;
+        color: $nav-drawer__list-text-secondary;
+      }
+      &:active {
+        background: $nav-drawer__list-bg-secondary;
+        color: $nav-drawer__list-text-secondary;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.js-nav-drawer__btn {
+  height: 3.9em;
+  background: $nav-button-secondary;
+  &:hover,
+  &:focus,
+  &:active {
+    background: $nav-button-secondary;
+  }
+}
+
+.js-rotate {
+  color: $nav-drawer__btn-arrow-secondary;
+  transform: rotate(180deg);
+}
+
+.js-nav-drawer__list {
+   max-height: 26em;
+}
+
+// Breadcrumb 
+.breadcrumb {
+  margin: 1.75em 0;
+  padding: 0 0 0 2em;
+  line-height: 1.5;
+  list-style-type: none;
+  @include tablet {
+    padding: 0 0 0 3em;
+  }
+  > li {
+    float: left;
+    margin: 0 .5em 0 0;
+    color: #a79d96;
+    > a {
+      text-decoration: none;
+      &:link, 
+      &:visited {
+        color: $nav-drawer__list-text-primary;
+      }
+      &:hover,
+      &:focus {
+        color: #be0f34;
+      } 
+      &:active {
+        color: #be0f34;
+      }
+    }
+    > span {
+      margin: 0 0 0 .5em;
+    }
+  }
+}
+
+// Pagination
+.pagination {
+  margin: 0;
+  padding: .5em;
+  background: #f3f1ee;
+  list-style-type: none;
+  > li {
+    position: relative;
+    left: 5%;
+    float: left;
+    margin: 0 1.5em 0 0;
+    padding: .5em 0;
+    color: #a79d96;
+    @include tablet {
+      left: 25%;
+    }
+    @include desktop {
+      left: 30%;
+    }
+    > a {
+      text-decoration: none;
+      &:link, 
+      &:visited {
+        color: $nav-drawer__list-text-primary;
+      }
+      &:hover,
+      &:focus {
+        color: #be0f34;
+      } 
+      &:active {
+        color: #be0f34;
+      }
+    }
+    > span {
+      margin: 0 0 0 .5em;
+    }
+  }
+}
+
+@supports (display: flex) {
+  .nav {
+    @include tablet {
+      display: flex;
+    }
+    &__bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include tablet {
+        justify-content: center;
+      }
+      @include desktop {
+        justify-content: space-between;
+      }
+    }
+    &__cabinet {
+      @include tablet {
+        display: flex;
+      }
+    }
+  }
+  
+  .home-link {
+    display: flex;
+    align-items: center;
+    @include tablet {
+      flex-direction: column;
+    }
+    &__heading {
+      margin: .25em 0 0 0; // overrides "margin" from float positioning for non-flexbox browsers
+    }
+  }
+  
+  .nav-row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar {
+    @include mobile {
+      position: relative; // overrides "position:absolute" for non-flexbox browsers
+      top: 0;
+      right: 0;
+    }
+    &__btn {
+      @include tablet {
+        border-radius: 0 5px 5px 0;
+      }
+    }
+  }
+  
+  .main-nav-button {
+    margin: 0; // overrides "margin" from float positioning for non-flexbox browsers
+  }
+ 
+  .nav-list {
+    &--secondary {
+      flex-wrap: wrap;
+    }
+  }
+  
+// Pagination
+  .pagination {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    > li {
+      position: static;
+    }
+  }
+}

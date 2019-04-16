@@ -1,0 +1,455 @@
+/* _sections-site-header.scss */
+
+/* FACULTY.HTML
+-------------------------------------------------- */
+// FACULTY PROFILES 
+.faculty {
+  display: none;
+  margin: 0 1.75em 0 1.75em;
+  @include tablet {
+    margin: 0 2.75em 0 2.75em; 
+  }
+  @include desktop--lg {
+    margin: 0 8em;
+  }
+  > h2 {
+    margin-bottom: 1em;
+    color: #000;
+    text-align: center;  
+  }
+  > section {
+    padding: .1em;
+    border-top: 2px solid rgba(0,0,0,.125);
+    border-right: 2px solid rgba(0,0,0,.125);
+    border-left: 2px solid rgba(0,0,0,.125);
+    text-align: center;
+    &:last-child {
+      border-bottom: 2px solid rgba(0,0,0,.125);
+    }
+  }
+}
+
+.faculty-input {
+  display: none;
+}
+
+#faculty-profiles-tab:checked ~ .faculty--profiles,
+#faculty-shinhan-tab:checked ~ .faculty--shinhan,
+#faculty-recruitment-tab:checked ~ .faculty--recruitment {
+  display: block;
+}
+
+.faculty-labels {
+  margin: 0 1.75em 0 1.75em;
+  @include tablet {
+    margin: 0 2.75em 0 2.75em;  
+  }
+  @include desktop--lg {
+    margin: 0 8em;
+  }
+  > label {
+    display: inline-block;
+    margin: 0 .25em;
+    padding: 1em;
+    border: 1px solid #a79d96;
+    border-radius: .25em;
+    color: #3277ae;
+    text-align: center;
+    @include mobile {
+      display: block;
+      &:not(:last-child) {
+        margin-bottom: 1em;
+      }
+    }
+    &:hover,
+    &:focus {
+      color: #be0f34;
+      cursor: pointer;
+    }
+  }
+  > a {
+    display: inline-block;
+    margin: 0 .25em;
+    padding: 1em;
+    background: #007bff;
+    border-radius: .25em;
+    text-align: center;
+    text-decoration: none;
+    &:link,
+    &:visited,
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff;
+    }
+  }
+}
+
+.faculty-images {
+  margin: 0 1.25em 0 1.25em;
+  max-height: 0;
+  overflow: hidden;
+  > figure {
+    display: block;
+    float: left;
+    margin: 1%;
+    width: 31%;
+    color: #000;
+    line-height: 1.5;
+    text-align: left;
+    text-decoration: none;
+    @include tablet {
+      width: 18%;
+    }
+    @include desktop {
+      width: 12.2%;
+    }
+    > img {
+      width: 100%;
+      background: #c2c2c2;
+    }
+    > figcaption {
+      > span {
+        display: block;
+      }
+      .faculty-name {
+        font-weight: 600;
+      }
+      > a {
+        display: block;
+        text-decoration: none;
+        @include desktop--lg {
+          font-size: .95rem; //so "Read More" arrows don't line break on desktop--lg
+        }
+        > svg {
+          margin: 0 0 0 .25em;
+        }
+        &:link,
+        &:visited {
+          color: #006cb8;
+        }
+        &:hover,
+        &:focus, 
+        &:active {
+          color: #00548f;
+          text-decoration: underline;
+          > svg {
+            margin: 0 0 0 .5em;
+            transition: margin .25s ease;
+          }
+        }
+      }
+    }
+  } 
+}
+
+.js-faculty-images {
+  max-height: 203em;
+  transition: max-height .75s ease-in-out;
+}
+
+.faculty__cc {
+  > .faculty-images {
+   > figure {
+     height: 16em;
+    } 
+  }
+}
+
+.faculty__ud {
+  > .faculty-images {
+   > figure {
+     height: 14em;
+    } 
+  }
+}
+
+.faculty__asd {
+  > .faculty-images {
+   > figure {
+     height: 14em;
+    } 
+  }
+}
+
+.faculty__tad {
+  > .faculty-images {
+   > figure {
+     height: 14em;
+    } 
+  }
+}
+
+.faculty__issd {
+  > .faculty-images {
+   > figure {
+     height: 14em;
+    } 
+  }
+}
+ 
+.faculty__ised {
+  > .faculty-images {
+   > figure {
+     height: 14em;
+    } 
+  }
+}
+
+// SHINHAN DISTINGUISHED FACULTY
+.faculty--shinhan {
+  margin: 0;
+  padding: 2em 0 0 0;
+  > h2 {
+    margin-bottom: 0;
+  }
+  > div {
+    margin: 0 1.75em 0 1.75em;
+    @include tablet {
+      margin: 0 2.75em 0 2.75em; 
+    }
+    @include desktop--lg {
+      margin: 0 8em; 
+    }
+    > figure {
+      margin: 0;
+      padding: 1em 0;
+      > img {
+        float: left;
+        width: 10em;
+      }
+      > figcaption {
+        float: left;
+        margin-left: 1em;
+        width: 55%;
+        line-height: 1.5;
+        @include mobile--sm {
+          width: 45%;
+        }
+        @include tablet {
+          width: 70%;
+        }
+        @include desktop {
+          width: 75%;
+        }
+        .faculty-name {
+          font-weight: 600;
+        }
+        > ul {
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+        }
+      }
+    }
+    > figure:not(:last-child) {
+      border-bottom: 2px solid rgba(0, 0, 0, 0.125);
+    }
+  }
+}
+
+/* CONTACT-US.HTML
+-------------------------------------------------- */
+// SINCHON PROFILES
+// SONGDO PROFILES
+
+.office {
+  display: none;
+  margin: 0 1.75em 0 1.75em;
+  @include tablet {
+    margin: 0 2.75em 0 2.75em; 
+  }
+  @include desktop--lg {
+    margin: 0 8em;
+  }
+  > h2 {
+    text-align: center;
+  }
+}
+
+.office-input {
+  display: none;
+}
+
+#sinchon-office-tab:checked ~ .office--sinchon,
+#songdo-office-tab:checked ~ .office--songdo {
+  display: block;
+}
+
+.office-labels {
+  margin: 0 1.75em 0 1.75em;
+  @include tablet {
+    margin: 0 2.75em 0 2.75em;  
+  }
+  @include desktop--lg {
+    margin: 0 8em;
+  }
+  > label {
+    display: inline-block;
+    margin: 0 .25em;
+    padding: 1em;
+    border: 1px solid #a79d96;
+    border-radius: .25em;
+    color: #3277ae;
+    text-align: center;
+    @include mobile {
+      display: block;
+      &:not(:last-child) {
+        margin-bottom: 1em;
+      }
+    }
+    &:hover,
+    &:focus {
+      color: #be0f34;
+      cursor: pointer;
+    }
+  }
+}
+
+.office-table {
+  width: 98%;
+  margin: 0 auto 1em auto;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  text-align: center;
+  th {
+    padding: .5em;
+    background-color: #e7ecf4;
+    border: 1px solid #e0e0e0;
+    color: #666;
+  }
+  td {
+    padding: .5em;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    color: #666;
+  }
+}
+
+.office-images {
+  > figure {
+    display: block;
+    float: left;
+    margin: 1%;
+    width: 48%;
+    height: 28em;
+    color: #000;
+    line-height: 1.5;
+    text-align: left;
+    text-decoration: none;
+    @include tablet {
+      width: 31%;
+    }
+    @include desktop--lg {
+      width: 23%;
+      height: 22em;
+    }
+    > img {
+      width: 100%;
+      background: #c2c2c2;
+    }
+    > figcaption {
+      > span {
+        display: block;
+        > a {
+          text-decoration: none;
+          &:link, 
+          &:visited {
+            color: #3277ae;
+          }
+          &:hover,
+          &:focus,
+          &:active {
+            color: #be0f34;
+          } 
+        }
+      }
+      .office-name {
+        font-weight: 600;
+      }
+    }
+  } 
+}
+
+@supports (display: flex) {
+  /* FACULTY.HTML
+  -------------------------------------------------- */
+  // FACULTY PROFILES 
+  .faculty-labels {
+    display: flex;
+    justify-content: flex-end;
+    @include mobile {
+      flex-flow: column;
+    }
+  }
+  
+  .faculty-images {
+    display: flex;
+    flex-wrap: wrap;
+    > figure {
+      @include tablet {
+        width: 18%;
+      }
+      @include desktop {
+        width: 12.2%;
+      }
+    }
+  }
+  
+  .faculty__cc,
+  .faculty__ud, 
+  .faculty__asd,
+  .faculty__tad,
+  .faculty__issd,
+  .faculty__ised {
+    > .faculty-images {
+     > figure {
+        height: initial;
+      } 
+    }
+  }
+  
+  // SHINHAN DISTINGUISHED FACULTY
+  .faculty--shinhan {
+    > div {
+      > figure {
+        display: flex;
+        @include tablet {
+          align-items: center; 
+        }
+        > img {
+          height: 10em;
+        }
+        > figcaption {
+          width: initial;
+        }
+      }
+    }
+  }
+  
+  /* OFFICE.HTML
+  -------------------------------------------------- */
+  // SINCHON PROFILES
+  // SONGDO PROFILES
+  .office-labels {
+    display: flex;
+    justify-content: flex-end;
+    @include mobile {
+      flex-flow: column;
+    }
+  }
+  
+  .office-images {
+    display: flex;
+    flex-wrap: wrap;
+    > figure {
+      height: initial;
+      @include tablet {
+        width: 31%;
+      }
+      @include desktop--lg {
+        width: 23%;
+      }
+    }
+  }
+}

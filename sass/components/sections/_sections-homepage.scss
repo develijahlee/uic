@@ -1,0 +1,320 @@
+/* _sections-homepage.scss */
+.highlight {
+  padding: 2em 0 2em 0;
+  &--first {
+    padding: 0 0 2em 0;
+    > h2 {
+    @include mobile {
+     padding: 0 2em; 
+    }
+  }
+  }
+  > h2 {
+    @include mobile {
+     padding: 0 2em; 
+    }
+  }
+}
+
+/* INDEX.HTML
+-------------------------------------------------- */
+/* FEATURED IMAGE*/
+.featured {
+  position: relative;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/featured-magic.jpg') center/cover;
+  height: 55vw;
+  z-index: -1; // mobile nav__cabinet layers above the featured image
+  @include desktop--lg {
+    height: 44vw;
+  }
+  &__overlay {
+    position: absolute; // containing block is ".featured"
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    opacity: .4;
+    z-index: -1; // ".featured__heading" layers above ".featured__overlay"
+  }
+  &__heading {
+    padding: 1em;
+    color: #fff;
+    position: absolute; // containing block is ".featured"
+    top: 50%;
+    transform: translate(0, -50%);
+    @include mobile--sm {
+      line-height: 1.2;
+    }
+  }
+}
+
+.featured-subheading {
+  display: block;
+}
+
+/* INDEX.HTML
+-------------------------------------------------- */
+/* NEWS PREVIEW */
+.news-preview {
+  background: #050144;
+  > h2 {
+    color: #fff;
+    text-align: center;  
+  }
+  &__grid {
+    @include tablet {
+      margin: 1.75em;
+    }
+    @include desktop--lg {
+      margin: 1.75em 8em;
+    }
+    > figure {
+      position: relative;
+      margin: 1.75em;
+      padding: 1em;
+      min-height: 5em;
+      background: #fff;
+      @include tablet {
+        margin: 1em;
+      }
+    } 
+  }
+}
+
+.homepage-date {
+  position: absolute; // container is immediate parent "figure"
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 1em .75em;
+  max-width: 4em; // for google translate that sometimes spills text outside container
+  background: #333;
+  color: #ddd; // for google translate that sometimes changes text to black
+  line-height: 1.5em;
+  text-align: center;
+  &__month {
+    display: block;
+  }
+  &__day {
+    display: block;
+  }
+}
+
+.news-text {
+  margin: 0 0 0 3.5em;
+  > p {
+    margin: 0;
+    color: #002171;
+    font-weight: 600;
+  }
+  > h3 {
+    > a {
+      text-decoration: none;
+      &:link,
+      &:visited {
+        color: #000;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        color: #006cb8;
+      }
+    }
+  }
+}
+
+/* INDEX.HTML
+-------------------------------------------------- */
+/* ACADEMICS PREVIEW */
+.academics-preview {
+  background: #fff;
+  > h2 {
+    text-align: center;  
+  }
+  &__grid {
+    margin: 0 0 1.75em 0;
+    padding: 0 1.75em;
+    @include desktop--lg {
+      padding: 0 8em;
+    }
+    > figure {
+      margin: 2em auto 1em auto;
+      padding: 0 1em;
+      max-width: 30em;
+      > img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+      }
+      > figcaption {
+        margin: 1em 0 0 0;
+        > a {
+          text-decoration: none;
+          &:link,
+          &:visited {
+            color: #006cb8;
+          }
+          &:hover,
+          &:focus,
+          &:active {
+            color: #00548f;
+            text-decoration: underline;
+          }
+          > svg {
+            margin: 0 0 0 .25em;
+          }
+          &:hover svg,
+          &:focus svg,
+          &:active svg {
+            margin: 0 0 0 .5em;
+            transition: margin .25s ease;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* INDEX.HTML
+-------------------------------------------------- */
+/* ADMISSIONS PREVIEW */
+.admissions-preview {
+  background: #f9f6ef;
+  > h2 {
+    text-align: center;  
+  }
+  &__img {
+    margin: 1.75em auto 0  auto;
+    width: 92%;
+    height: 50vw;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/admissions-featured.jpg');
+    background-position: center;
+    background-size: cover;
+    @include tablet {
+      width: 90%;
+      height: 40vw;
+    }
+  }
+  > div {
+    width: 92%;
+    margin: 1.75em auto 1.75em auto;
+    @include tablet {
+      width: 90%;
+    }
+    @include desktop--lg {
+      width: 75%;
+    }
+  }
+}
+
+/* INDEX.HTML
+-------------------------------------------------- */
+/* ABOUT PREVIEW */
+.about-preview {
+  background: #fff;
+  > h2 {
+    text-align: center;
+  }
+  &__img {
+    margin: 1.75em auto 0  auto;
+    width: 92%;
+    height: 50vw;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/about-featured.jpg');
+    background-position: center;
+    background-size: cover;
+    @include tablet {
+      width: 90%;
+      height: 40vw;
+    }
+    @include desktop--lg {
+      width: 75%;
+    }
+  }
+  &__grid {
+    margin: 1em auto .25em auto;
+    width: 92%;
+    @include tablet {
+      margin: 1em auto .75em auto;
+      width: 90%;
+    }
+    > figure {
+      text-align: center;
+      @include tablet {
+        margin: .5em;
+      }
+      > strong {
+        display: block;
+      }
+    }
+  }
+}
+
+@supports (display: flex) {
+/* INDEX.HTML
+-------------------------------------------------- */
+/* FEATURED IMAGE*/
+  .featured {
+    display: flex;
+    align-items: center;
+    &__heading {
+      position: static;
+      transform: none;
+    }
+  }
+  
+/* INDEX.HTML
+-------------------------------------------------- */
+/* NEWS PREVIEW */
+ .news-preview {
+  &__grid {
+   > figure {
+     display: flex;
+     align-items: center;
+   } 
+  }
+ }
+  .homepage-date {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: .5em .75em;
+    &__month {
+      display: inline;
+    }
+    &__day {
+      display: inline;
+    }
+  }
+  
+/* INDEX.HTML
+-------------------------------------------------- */
+/* ADMISSIONS PREVIEW */
+  .admissions-preview {
+    > div {
+      @include tablet {
+        display: flex;
+        justify-content: space-between;
+        > section {
+          @include tablet {
+            width: 49%;
+          }
+        }
+      }
+    }
+  }
+  
+/* INDEX.HTML
+-------------------------------------------------- */
+/* ABOUT PREVIEW */
+  .about-preview {
+    &__grid {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      @include tablet {
+        display: grid;
+      }
+    }
+  }
+}

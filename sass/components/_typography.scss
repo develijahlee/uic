@@ -1,0 +1,177 @@
+/* _typography.scss */
+:root {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(.6rem + 1vw);
+  @include tablet {
+    font-size: calc(.5rem + 1vw);
+  }
+}
+
+p,
+table {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* BUTTONS
+-------------------------------------------------- */
+.call-to-action {
+  font-size: 1.25rem;
+}
+
+.accordion-trigger {
+  font-size: 1.17rem;
+}
+
+/* NAVIGATION
+-------------------------------------------------- */
+.nav {
+  font-size: 1rem;
+}
+
+.nav-list {
+  &--primary {
+    @include tablet {
+      font-size: .75rem;
+    }
+    >.nav-drawer {
+      > a {
+        font-size: 1.25rem;
+        @include tablet {
+          font-size: 1rem;
+        }
+      }
+      &:hover .nav-drawer__list,
+      &:focus-within .nav-drawer__list {
+        @include tablet {
+          font-size: .75rem;
+        }
+      }
+    }
+  }
+  &--secondary {
+    >.nav-drawer {
+      > a {
+        font-size: 1rem;
+        @include tablet {
+          font-size: .75rem;
+        }
+      }
+    }
+  }
+}
+
+.home-link {
+  &__heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: inherit;
+    @include tablet {
+      font-size: .75rem;
+    }
+  }
+}
+
+/* HIGHLIGHT
+-------------------------------------------------- */
+.highlight,
+.highlight--first {
+  h2 {
+    font-size: calc(1.5rem + 1vw);
+  }
+}
+
+/* INDEX.HTML
+-------------------------------------------------- */
+/* FEATURED IMAGE */
+.featured {
+  &__heading {
+    line-height: 1.2em;
+    font-size: calc(2rem + 1vw);
+    @include tablet {
+      font-size: calc(3rem + 1vw);
+    }
+  }
+}
+
+.featured-subheading {
+  font-size: calc(1rem + 1vw);
+  font-weight: 500;
+  @include tablet {
+    font-size: calc(1.5rem + 1vw);
+  }
+}
+
+/* INDEX.HTML
+-------------------------------------------------- */
+/* ABOUT */
+.about-preview {
+  &__grid {
+    font-size: 1.5rem;
+    > figure {
+      margin-top: 0;
+      line-height: 1.5;
+    }
+  }
+}
+
+/* NEWSLETTER.HTML
+-------------------------------------------------- */
+.newsletter {
+  > h2 {
+    font-size: calc(1.5rem + 1vw);
+  }
+  &__focus,
+  &__news-and-activities,
+  &__alumni-and-uic-community {
+    > h3 {
+      font-size: calc(1.25rem + 1vw);
+    } 
+  }
+}
+
+/* PRIVACY-POLICY.HTML
+-------------------------------------------------- */
+.privacy-policy li {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* ACADEMICS.HTML
+-------------------------------------------------- */
+/* UD PREVIEW */
+/* HASS PREVIEW */
+/* ISED PREVIEW */
+/* CC PREVIEW */
+/* UIC-PROGRAMS PREVIEW */
+/* STUDY-ABROAD PREVIEW */
+
+.ud-preview,
+.hass-preview,
+.ised-preview,
+.cc-preview,
+.programs-preview,
+.study-abroad-preview {
+  > p {
+    font-size: calc(.8rem + 1vw);
+  }
+}
+
+/* FOOTER
+-------------------------------------------------- */
+.footer {
+  font-size: 1rem;
+  li {
+    line-height: 1.5;
+  }
+  &__social-links {
+    > li {
+      @include mobile {
+        font-size: 1.25rem;
+      }
+      @include tablet {
+        font-size: 1.25rem;
+      } 
+    }
+  }
+}

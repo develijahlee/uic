@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Office - Underwood International College</title>
+  <link rel="icon" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/yonsei-logo-32x32.png" type="image/png">
+  <link rel="stylesheet" href="../sass/main.processed.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+</head>  
+<body>
+  <header class="header">
+    <nav class="nav clearfix"><!-- ".nav-drawer__list" must overflow "nav" on desktop -->
+      <div class="nav__bar">
+        <a class="home-link" href="../index.html">
+          <img class="home-link__logo" src="../yonseiEmblem.svg" alt="Yonsei emblem">
+          <h1 class="home-link__heading">
+            <span class="mobile-heading">UIC</span><span class="tablet-heading">Underwood <br> International <br> College</span>
+          </h1>
+        </a>
+        <div class="nav-row">
+          <form class="search-bar" action="#">
+            <input class="search-bar__text" type="search" placeholder="Search..." name="search">
+            <button class="search-bar__btn" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+          <button type="button" aria-label="navigation menu" aria-controls="navCabinet" aria-expanded="false" class="main-nav-button">
+            <i class="fas fa-bars fa-2x"></i>
+          </button>
+        </div>
+      </div>
+      <div class="nav__cabinet" id="navCabinet">
+        <ul class="nav-list nav-list--primary clearfix"><!-- ".nav-drawer__list" must overflow ".nav-list--primary" on desktop -->
+          <li class="nav-drawer">
+            <a href="../news/news-preview.html">News</a>
+            <button type="button" class="nav-drawer__btn">
+              <i class="fas fa-angle-down fa-2x"></i>
+            </button>
+            <ul class="nav-drawer__list">
+              <li><a href="../news/academic-affairs.html" class="nav-link">Academic Affairs</a></li>
+              <li><a href="../news/student-services.html" class="nav-link">Student Services</a></li>
+              <li><a href="../news/events.html" class="nav-link">Events</a></li>
+              <li><a href="../news/newsletter.html" class="nav-link">Newsletter</a></li>
+            </ul>
+          </li>
+          <li class="nav-drawer">
+            <a href="../academics/academics-preview.html">Academics</a>
+            <button type="button" class="nav-drawer__btn">
+              <i class="fas fa-angle-down fa-2x"></i>
+            </button>
+            <ul class="nav-drawer__list">
+              <li><a href="../academics/ud/ud.html" class="nav-link">Underwood Division</a></li>
+              <li><a href="../academics/hass/hass.html" class="nav-link">Humanities, Arts, and Social Sciences</a></li>
+              <li><a href="../academics/ised/ised.html" class="nav-link">Integrated Science and Engineering Division</a></li>
+              <li><a href="../academics/cc/cc.html" class="nav-link">Common Curriculum</a></li>
+              <li><a href="../academics/uic-programs/uic-programs.html" class="nav-link">UIC Programs</a></li>
+              <li><a href="../academics/study-abroad/study-abroad.html" class="nav-link">Study Abroad</a></li>
+            </ul>
+          </li>
+          <li class="nav-drawer">
+            <a href="../admissions/admissions-preview.html">Admissions</a>
+            <button type="button" class="nav-drawer__btn">
+              <i class="fas fa-angle-down fa-2x"></i>
+            </button>
+            <ul class="nav-drawer__list">
+              <li><a href="../admissions/application/application.html" class="nav-link">Applying to UIC</a></li>
+              <li><a href="../admissions/tuition-and-scholarships.html" class="nav-link">Tuition and Scholarships</a></li>
+              <li><a href="../admissions/housing.html" class="nav-link">Housing</a></li>
+              <li><a href="../admissions/visa-alien-registration.html" class="nav-link">Visa/Alien Registration</a></li>
+              <li><a href="../admissions/banking-and-insurance.html" class="nav-link">Banking and Insurance</a></li>
+              <li><a href="../admissions/frequently-asked-questions.html" class="nav-link">Frequently Asked Questions</a></li>
+            </ul>
+          </li>
+          <li class="nav-drawer">
+            <a href="../about/about-preview.html">About</a>
+            <button class="nav-drawer__btn">
+              <i class="fas fa-angle-down fa-2x"></i>
+            </button>
+            <ul class="nav-drawer__list">
+              <li><a href="../about/uic-advantage.html" class="nav-link">UIC Advantage</a></li>
+              <li><a href="../about/campus-life.html" class="nav-link">Campus Life</a></li>
+              <li><a href="../about/organizations/student-organizations.html" class="nav-link">Student Organizations</a></li>
+              <li><a href="../about/multimedia.html" class="nav-link">Multimedia</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav-list nav-list--secondary">
+          <li class="nav-drawer">
+            <a href="https://uic.yonsei.ac.kr/apply/default.asp?mid=m01" target="_blank" rel="noopener noreferrer">Apply</a>
+          </li>
+          <li class="nav-drawer">
+            <a href="contact-us.html">Contact Us</a>
+          </li>
+          <li class="nav-drawer">
+            <a href="faculty.html">Faculty</a>
+          </li>
+          <li class="nav-drawer">
+            <a href="alumni.html">Alumni</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <ul aria-label="breadcrumb navigation" class="breadcrumb clearfix">
+    <li>
+      <a href="../index.html">Home</a><span><i class="fa fa-angle-right"></i></span>
+    </li>
+    <li>Contact Us</li>
+  </ul>
+  
+  <main>
+    <input id="sinchon-office-tab" class="office-input" type="radio" name="tabs" checked>
+    <input id="songdo-office-tab" class="office-input" type="radio" name="tabs">
+    <div class="office-labels">
+      <label for="sinchon-office-tab">Sinchon Campus</label>
+      <label for="songdo-office-tab">Songdo International Campus</label>
+    </div>
+    <section class="office office--sinchon highlight">
+      <h2>Sinchon Campus Office</h2>
+      <table class="office-table">
+        <tbody>
+          <tr>
+            <th>Hours</th>
+            <td>Monday - Friday, 9:00am - 5:30pm</td>
+          </tr>
+          <tr>
+            <th>Location</th>
+            <td>Daewoo Annex Hall, Room 301</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="office-images clearfix">
+        <figure>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+          <figcaption>
+            <span class="office-name">Myoung-Sihk Park</span>
+            <span class="office-position">Director of Administration</span>
+            <span><a href="mailto:mspark@yonsei.ac.kr">mspark@yonsei.ac.kr</a></span>
+            <span><a href="tel:+02-2123-3922">+02-2123-3922</a></span>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+          <figcaption>
+            <span class="office-name">Minyoung Shin</span>
+            <span class="office-position">Faculty Affairs</span>
+            <span><a href="mailto:myshin@yonsei.ac.kr">myshin@yonsei.ac.kr</a></span>
+            <span><a href="tel:+02-2123-3948">+02-2123-3948</a></span>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+          <figcaption>
+            <span class="office-name">Jeesun Kim</span>
+            <span class="office-position">Student Affairs</span>
+            <span><a href="mailto:uic_services@yonsei.ac.kr">uic_services@yonsei.ac.kr</a></span>
+            <span><a href="tel:+02-2123-3926">+02-2123-3926</a></span>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+          <figcaption>
+            <span class="office-name">Junyoung Chang</span>
+            <span class="office-position">Admissions Officer</span>
+            <span><a href="mailto:uicadm@yonsei.ac.kr">uicadm@yonsei.ac.kr</a></span>
+            <span><a href="tel:+02-2123-3923">+02-2123-3923</a></span>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+          <figcaption>
+            <span class="office-name">Geeyeon Noh</span>
+            <span class="office-position">UD Registrar</span>
+            <span><a href="mailto:uic_ud@yonsei.ac.kr">uic_ud@yonsei.ac.kr</a></span>
+            <span><a href="tel:+02-2123-3925">+02-2123-3925</a></span>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+          <figcaption>
+            <span class="office-name">Minchul Noh</span>
+            <span class="office-position">Student Recruitment Officer</span>
+            <span><a href="mailto:uicpr@yonsei.ac.kr">uicpr@yonsei.ac.kr</a></span>
+            <span><a href="tel:+02-2123-3924">+02-2123-3924</a></span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="office office--songdo highlight">
+      <h2>Songdo International Campus Office</h2>
+      <table class="office-table">
+        <tbody>
+          <tr>
+            <th>Hours</th>
+            <td>Monday - Friday, 9:00am - 5:30pm</td>
+          </tr>
+          <tr>
+            <th>Location</th>
+            <td>Veritas Hall B, 420</td>
+          </tr>
+          <tr>
+            <th>HASS (ASD, TAD, ISSD) Field Office</th>
+            <td>Veritas Hall B, 437</td>
+          </tr>
+          <tr>
+            <th>ISED Field Office</th>
+            <td>Veritas Hall B, 438</td>
+          </tr>
+          <tr>
+            <th>Yonsei Center for Social Innovation</th>
+            <td>Veritas Hall B,  326</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="office-images clearfix">
+        <figure>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+          <figcaption>
+            <span class="office-name">Myoung-Sihk Park</span>
+            <span class="office-position">Director of Administration</span>
+            <span><a href="mailto:mspark@yonsei.ac.kr">mspark@yonsei.ac.kr</a></span>
+            <span><a href="tel:+032-749-3704">+032-749-3704</a></span>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+          <figcaption>
+            <span class="office-name">Youngsun Cho</span>
+            <span class="office-position">Academic Affairs, CC Registrar, Scholarship</span>
+            <span><a href="mailto:uic_aa@yonsei.ac.kr">uic_aa@yonsei.ac.kr</a></span>
+            <span><a href="mailto:uic_scholarship@yonsei.ac.kr" style="font-size: .95rem;">uic_scholarship@yonsei.ac.kr</a></span>
+            <span><a href="tel:+032-749-3705">+032-749-3705</a></span>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+          <figcaption>
+            <span class="office-name">Jongchul Park</span>
+            <span class="office-position">Student Affairs</span>
+            <span><a href="mailto:uic_students@yonsei.ac.kr">uic_students@yonsei.ac.kr</a></span>
+            <span><a href="tel:+032-749-3706">+032-749-3706</a></span>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+          <figcaption>
+            <span class="office-name">Kiyoung Kang</span>
+            <span class="office-position">ISE Registrar </span>
+            <span><a href="mailto:uic_ise@yonsei.ac.kr">uic_ise@yonsei.ac.kr</a></span>
+            <span><a href="tel:+032-749-3801">+032-749-3801</a></span>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+          <figcaption>
+            <span class="office-name">Jinwoo Nam </span>
+            <span class="office-position">HASS Registrar</span>
+            <span><a href="mailto:uic_hass@yonsei.ac.kr">uic_hass@yonsei.ac.kr</a></span>
+            <span><a href="tel:+032-749-3761">+032-749-3761</a></span>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+          <figcaption>
+            <span class="office-name">Semina Yi</span>
+            <span class="office-position">Design Factory Korea Coach</span>
+            <span><a href="mailto:designfactorykorea@yonsei.ac.kr" style="font-size: .85rem;">designfactorykorea@yonsei.ac.kr</a></span>
+            <span><a href="tel:+032-749-3707">+032-749-3707</a></span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <ul class="footer__social-links clearfix">
+      <li aria-label="Facebook link">
+        <a href="https://www.facebook.com/UIC.YonseiUniversity" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-facebook-square fa-2x"></i>
+        </a>
+      </li>
+      <li aria-label="Instagram link">
+        <a href="https://www.instagram.com/uicyonsei/" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+      </li>
+    </ul>
+    <div class="footer-flex">
+      <ul class="footer__external-links">
+        <li><a href="#" target="_blank" rel="noopener noreferrer">Career Development Center</a></li>
+        <li><a href="https://dfk.yonsei.ac.kr/" target="_blank" rel="noopener noreferrer">Design Factory Korea</a></li>
+        <li><a href="https://uic.yonsei.ac.kr/writingcenter/default.asp" target="_blank" rel="noopener noreferrer">UIC Writing Center</a></li>
+        <li><a href="https://uic.yonsei.ac.kr/ycsi/default.asp" target="_blank" rel="noopener noreferrer">Yonsei Center for Social Innovation</a></li>
+      </ul>
+      <ul class="footer__internal-links">
+        <li><a href="../site-footer/academic-calendar.html">Academic Calendar</a></li>
+        <li><a href="../site-footer/academic-regulations/academic-regulations.html">Academic Regulations</a></li>
+        <li><a href="../site-footer/health-and-counseling/health-and-counseling.html">Health and Counseling</a></li>
+        <li><a href="../site-footer/maps-and-directions.html">Maps & Directions</a></li>
+        <li><a href="../site-footer/privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <ul class="footer__legal clearfix">
+      <li>
+        <address>Underwood International College, Yonsei University 50 Yonsei-ro, Seodaemun-gu, Seoul, 03722 Republic of Korea</address>
+      </li>
+      <li>© Underwood International College 2020</li>
+    </ul>
+  </footer>
+  
+  <script src="../js/components/navigation.js"></script>
+</body>
+</html>  

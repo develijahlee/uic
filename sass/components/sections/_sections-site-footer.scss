@@ -1,0 +1,410 @@
+/* _sections-site-footer.scss */
+
+/* PRIVACY-POLICY.HTML
+-------------------------------------------------- */
+.privacy-policy {
+  > table,
+    th,
+    td {
+    padding: .5em;
+  }
+  > table {
+    border-collapse: collapse;
+    @include mobile {
+      table-layout: fixed;
+      width: 95%;
+      margin: 0 auto;
+    }
+    @include tablet {
+      margin-left: calc(12.5% + 20px);
+      margin-right: calc(12.5% + 20px);
+    }
+    > caption {
+      visibility: hidden;
+      height: 0;
+    }
+    th {
+      border-bottom: 1px solid #999;
+      text-align: inherit;
+    }
+    td {
+      vertical-align: top;
+    }
+  }
+  a {
+    text-decoration: none;
+    &:link, 
+    &:visited {
+      color: #3277ae;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      color: #be0f34;
+    } 
+  }
+  address {
+    display: inline;
+    font-style: initial;
+  }
+}
+
+.before-table,
+.after-table {
+  padding-left: calc(5% + 20px);
+  padding-right: calc(5% + 20px);
+  @include tablet {
+    padding-left: calc(12.5% + 20px);
+    padding-right: calc(12.5% + 20px);
+  }
+}
+
+/* MAPS-AND-DIRECTIONS.HTML
+-------------------------------------------------- */
+.campus-input {
+  display: none;
+}
+
+#sinchon-campus-tab:checked ~ .campus-maps--sinchon,
+#songdo-campus-tab:checked ~ .campus-maps--songdo {
+  display: block;
+}
+
+.campus-labels {
+  margin: 0 1.75em 0 1.75em;
+  @include tablet {
+    margin: 0 2.75em 0 2.75em;  
+  }
+  @include desktop--lg {
+    margin: 0 8em;
+  }
+  > label {
+    display: inline-block;
+    margin: 0 .25em;
+    padding: 1em;
+    border: 1px solid #a79d96;
+    border-radius: .25em;
+    color: #3277ae;
+    text-align: center;
+    @include mobile {
+      display: block;
+      &:first-child {
+        margin-bottom: 1em;
+      }
+    }
+    &:hover,
+    &:focus {
+      color: #be0f34;
+      cursor: pointer;
+    }
+  }
+}
+
+.campus-maps {
+  display: none;
+  > h2 {
+    text-align: center;
+  }
+  &--songdo {
+    > h2 {
+      @include mobile {
+        padding: 0 .25em 0 .25em;
+      }
+    }
+  }
+}
+
+.google-map { // Get Google Maps API Key with mandatory Billing Info when site goes live
+  padding: 1.75em;
+  @include tablet {
+    padding: 1.75em 2.75em;  
+  }
+  @include desktop--lg {
+    padding: 1.75em 8em;  
+  }
+  > iframe {
+    height: 20em;
+    @include tablet {
+      height: 25em;
+    }
+  }
+  > address {
+    margin: 1em 1em 1em 0;
+    font-style: inherit;
+    line-height: 1.5;
+  }
+  > p {
+    > a {
+      text-decoration: none;
+      &:link, 
+      &:visited {
+        color: #3277ae;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        color: #be0f34;
+      } 
+    }
+  }
+}
+
+/* ACADEMIC-CALENDAR.HTML
+-------------------------------------------------- */
+.year-labels {
+  margin: 0 1.75em 0 1.75em;
+  @include tablet {
+    margin-left: calc(12.5% + 20px);
+    margin-right: calc(12.5% + 20px);
+  }
+  > label {
+    display: inline-block;
+    margin: 0 .25em;
+    padding: 1em;
+    border: 1px solid #a79d96;
+    border-radius: .25em;
+    color: #3277ae;
+    text-align: center;
+    @include mobile {
+      display: block;
+      &:first-child {
+        margin-bottom: 1em;
+      }
+    }
+    &:hover,
+    &:focus {
+      color: #be0f34;
+      cursor: pointer;
+    }
+  }
+}
+
+.academic-calendar {
+  > h2 {
+    text-align: center;
+  }
+  > p {
+    margin-left: calc(2.5% + 20px);
+    margin-right: calc(2.5% + 20px);
+    @include tablet {
+      margin-left: calc(12.5% + 20px);
+      margin-right: calc(12.5% + 20px);
+    }
+    a {
+      text-decoration: none;
+      &:link, 
+      &:visited {
+        color: #3277ae;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        color: #be0f34;
+      } 
+    }
+  }
+  > table,
+    th,
+    td {
+    padding: .5em;
+  }
+  > table {
+    border-collapse: collapse;
+    text-align: center;
+    @include mobile {
+      table-layout: fixed;
+      width: 95%;
+      margin: 0 auto;
+    }
+    @include tablet {
+      margin-left: calc(12.5% + 20px);
+      margin-right: calc(12.5% + 20px);
+    }
+    > caption {
+      visibility: hidden;
+      height: 0;
+    }
+    > thead {
+      background: #f5f5f5;
+      border: 1px solid #a79d96;
+    }
+    > tbody {
+      border-left: 1px solid #a79d96;
+      > tr {
+        > th {
+          border-right: 1px solid #a79d96;
+          border-bottom: 1px solid #a79d96;
+        }
+      }
+    }
+    td {
+      border-right: 1px solid #a79d96;
+      border-bottom: 1px solid #a79d96;
+    }
+    td:last-child {
+      text-align: left;
+    }
+  }
+}
+
+/* ACADEMIC-REGULATIONS.HTML
+-------------------------------------------------- */
+/* ACADEMIC REGULATIONS OVERVIEW */
+.academic-regulations-overview {
+    &__grid {
+      > figure {
+        display: flex;
+        flex-flow: column;
+        > figcaption {
+          text-align: left;
+        }
+        @include tablet {
+          flex-flow: row;
+          align-items: center;
+          margin: 1em;
+          > svg {
+            width: .875em!important;
+            margin-right: .18em;
+          }
+          > figcaption {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+
+.academic-regulations-programs {
+  padding-left: calc(5% + 20px);
+  padding-right: calc(5% + 20px);
+  @include tablet {
+    padding-left: calc(12.5% + 20px);
+    padding-right: calc(12.5% + 20px);
+  }
+  a {
+    text-decoration: none;
+    &:link, 
+    &:visited {
+      color: #3277ae;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      color: #be0f34;
+    } 
+  }
+  li {
+    line-height: 1.5;
+  }
+}
+
+.academic-regulations-table {
+  font-size: .9rem;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  text-align: center;
+  caption {
+    text-align: left;
+    font-weight: bold;
+  }
+  th {
+    padding: .5em;
+    background-color: #e7ecf4;
+    border: 1px solid #e0e0e0;
+    color: #666;
+  }
+  td {
+    padding: .5em;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    color: #666;
+  }
+}
+
+/* S-CAMPUS-SERVICE.HTML
+-------------------------------------------------- */
+.s-campus-imgs {
+  > img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1.5em;
+  }
+}
+
+/* HEALTH-AND-COUNSELING.HTML
+-------------------------------------------------- */
+/* HEALTH-AND-COUNSELING OVERVIEW */
+.health-and-counseling-overview {
+  &__grid {
+    > figure {
+      display: flex;
+      flex-flow: column;
+      > figcaption {
+        text-align: left;
+      }
+      @include tablet {
+        flex-flow: row;
+        align-items: center;
+        margin: 1em;
+        > svg {
+          width: .875em!important;
+          margin-right: .18em;
+        }
+        > figcaption {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+.health-and-counseling-programs {
+  padding-left: calc(5% + 20px);
+  padding-right: calc(5% + 20px);
+  @include tablet {
+    padding-left: calc(12.5% + 20px);
+    padding-right: calc(12.5% + 20px);
+  }
+  a {
+    text-decoration: none;
+    &:link, 
+    &:visited {
+      color: #3277ae;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      color: #be0f34;
+    } 
+  }
+  li {
+    line-height: 1.5;
+  }
+}
+
+@supports (display: flex) {
+/* MAPS-AND-DIRECTIONS.HTML
+-------------------------------------------------- */
+  .campus-labels {
+    display: flex;
+    justify-content: flex-end;
+    @include mobile {
+      flex-flow: column;
+    }
+  }
+  
+/* S-CAMPUS-SERVICE.HTML
+-------------------------------------------------- */
+  .s-campus-imgs {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+    }
+    > img {
+      @include tablet {
+        width: 50%;
+      }
+    }
+  }
+}

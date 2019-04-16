@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Faculty - Underwood International College</title>
+  <link rel="icon" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/yonsei-logo-32x32.png" type="image/png">
+  <link rel="stylesheet" href="../sass/main.processed.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav clearfix"><!-- ".nav-drawer__list" must overflow "nav" on desktop -->
+      <div class="nav__bar">
+        <a class="home-link" href="../index.html">
+          <img class="home-link__logo" src="../yonseiEmblem.svg" alt="Yonsei emblem">
+          <h1 class="home-link__heading">
+            <span class="mobile-heading">UIC</span><span class="tablet-heading">Underwood <br> International <br> College</span>
+          </h1>
+        </a>
+        <div class="nav-row">
+          <form class="search-bar" action="#">
+            <input class="search-bar__text" type="search" placeholder="Search..." name="search">
+            <button class="search-bar__btn" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+          <button type="button" aria-label="navigation menu" aria-controls="navCabinet" aria-expanded="false" class="main-nav-button">
+            <i class="fas fa-bars fa-2x"></i>
+          </button>
+        </div>
+      </div>
+      <div class="nav__cabinet" id="navCabinet">
+        <ul class="nav-list nav-list--primary clearfix"><!-- ".nav-drawer__list" must overflow ".nav-list--primary" on desktop -->
+          <li class="nav-drawer">
+            <a href="../news/news-preview.html">News</a>
+            <button type="button" class="nav-drawer__btn">
+              <i class="fas fa-angle-down fa-2x"></i>
+            </button>
+            <ul class="nav-drawer__list">
+              <li><a href="../news/academic-affairs.html" class="nav-link">Academic Affairs</a></li>
+              <li><a href="../news/student-services.html" class="nav-link">Student Services</a></li>
+              <li><a href="../news/events.html" class="nav-link">Events</a></li>
+              <li><a href="../news/newsletter.html" class="nav-link">Newsletter</a></li>
+            </ul>
+          </li>
+          <li class="nav-drawer">
+            <a href="../academics/academics-preview.html">Academics</a>
+            <button type="button" class="nav-drawer__btn">
+              <i class="fas fa-angle-down fa-2x"></i>
+            </button>
+            <ul class="nav-drawer__list">
+              <li><a href="../academics/ud/ud.html" class="nav-link">Underwood Division</a></li>
+              <li><a href="../academics/hass/hass.html" class="nav-link">Humanities, Arts, and Social Sciences</a></li>
+              <li><a href="../academics/ised/ised.html" class="nav-link">Integrated Science and Engineering Division</a></li>
+              <li><a href="../academics/cc/cc.html" class="nav-link">Common Curriculum</a></li>
+              <li><a href="../academics/uic-programs/uic-programs.html" class="nav-link">UIC Programs</a></li>
+              <li><a href="../academics/study-abroad/study-abroad.html" class="nav-link">Study Abroad</a></li>
+            </ul>
+          </li>
+          <li class="nav-drawer">
+            <a href="../admissions/admissions-preview.html">Admissions</a>
+            <button type="button" class="nav-drawer__btn">
+              <i class="fas fa-angle-down fa-2x"></i>
+            </button>
+            <ul class="nav-drawer__list">
+              <li><a href="../admissions/application/application.html" class="nav-link">Applying to UIC</a></li>
+              <li><a href="../admissions/tuition-and-scholarships.html" class="nav-link">Tuition and Scholarships</a></li>
+              <li><a href="../admissions/housing.html" class="nav-link">Housing</a></li>
+              <li><a href="../admissions/visa-alien-registration.html" class="nav-link">Visa/Alien Registration</a></li>
+              <li><a href="../admissions/banking-and-insurance.html" class="nav-link">Banking and Insurance</a></li>
+              <li><a href="../admissions/frequently-asked-questions.html" class="nav-link">Frequently Asked Questions</a></li>
+            </ul>
+          </li>
+          <li class="nav-drawer">
+            <a href="../about/about-preview.html">About</a>
+            <button class="nav-drawer__btn">
+              <i class="fas fa-angle-down fa-2x"></i>
+            </button>
+            <ul class="nav-drawer__list">
+              <li><a href="../about/uic-advantage.html" class="nav-link">UIC Advantage</a></li>
+              <li><a href="../about/campus-life.html" class="nav-link">Campus Life</a></li>
+              <li><a href="../about/organizations/student-organizations.html" class="nav-link">Student Organizations</a></li>
+              <li><a href="../about/multimedia.html" class="nav-link">Multimedia</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav-list nav-list--secondary">
+          <li class="nav-drawer">
+            <a href="https://uic.yonsei.ac.kr/apply/default.asp?mid=m01" target="_blank" rel="noopener noreferrer">Apply</a>
+          </li>
+          <li class="nav-drawer">
+            <a href="contact-us.html">Contact Us</a>
+          </li>
+          <li class="nav-drawer">
+            <a href="faculty.html">Faculty</a>
+          </li>
+          <li class="nav-drawer">
+            <a href="alumni.html">Alumni</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <ul aria-label="breadcrumb navigation" class="breadcrumb clearfix">
+    <li>
+      <a href="../index.html">Home</a><span><i class="fa fa-angle-right"></i></span>
+    </li>
+    <li>Faculty</li>
+  </ul>
+  
+  <main>
+    <input id="faculty-profiles-tab" class="faculty-input" type="radio" name="tabs" checked>
+    <input id="faculty-shinhan-tab" class="faculty-input" type="radio" name="tabs">
+    <div class="faculty-labels">
+      <label for="faculty-profiles-tab">Faculty Profiles</label>
+      <label for="faculty-shinhan-tab">Shinhan Distinguished Faculty</label>
+      <a href="https://uic.yonsei.ac.kr/professorship/application.asp" target="_blank" rel="noopener noreferrer">Recruitment</a>
+    </div>
+    <section class="faculty faculty--profiles highlight">
+      <h2>Faculty Profiles</h2>
+      <section class="faculty__deans">
+        <button aria-controls="deans" class="accordion-trigger">Dean & Associate Deans
+        </button>
+        <div class="faculty-images clearfix" id="deans">
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Taeyoon Sung</span>
+              <span class="faculty-position">Dean</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Hyun Jae Kim</span>
+              <span class="faculty-position">Associate Dean</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Jung Hoon Lee</span>
+              <span class="faculty-position">Associate Dean</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="faculty__advisors">
+        <button aria-controls="advisors" class="accordion-trigger">Academic Advisors</button>
+        <div class="faculty-images clearfix" id="advisors" aria-hidden="true">
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Mihyun Kim</span>
+              <span class="faculty-position">Academic Advisor (UD)</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Hyunsang Kim</span>
+              <span class="faculty-position">Academic Advisor (HASS)</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Sol-A Yu</span>
+              <span class="faculty-position">Academic Advisor (LSBT, ASD, ISED)</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="faculty__cc">
+        <button aria-controls="cc" class="accordion-trigger">Common Curriculum
+        </button>
+        <div class="faculty-images clearfix" id="cc">
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Anthony C. Adler</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Robert Beachy</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Charles Bradford Bow</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Manuel Valencia Cabrera Jr.</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Colin R. Caret</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Philip Cho</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Nansulhun Choi</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Natalja Deng</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Chad Denton</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Stefano Ercolino</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">John M. Frankl</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Timothy J. Fuller</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Jen Hui Bon Hoa</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Bennett Holman</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Seunghei Clara Hong</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Michael Hope</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Howard Kahm</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Astrid Lac</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Dennis Lee</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Helen J.S. Lee</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Krys Lee</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Michael Michael</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Rennie Moon</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Nikolaj Jang Lee Linding Pedersen</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Michael L. Ratnapalan</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Jeffrey Robertson</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Jesse Sloane</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Tanvi Solanki</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Paul D. Tonks</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Kelly S. Walsh</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Jeremy Wyatt</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="faculty__ud">
+        <button aria-controls="ud" class="accordion-trigger">Underwood Division (UD)
+        </button>
+        <div class="faculty-images clearfix" id="ud">
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">S. Carroll Brooks III</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Jong Kun Choi</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Sangyup Choi</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">John Delury</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Loren Goodman</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Youjin Hahn</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Chulyoung Kim</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Jiseob Kim</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Kwang Hwan Kim</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Michael Kim</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Yong Jin Kim</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Jeong Yeon Lee</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Matthias Maass</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Jongryn Mo</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Hyungji Park</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Hans Schattle</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Jon Soderholm</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Jaewhan Song</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Minwoo Yoon</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="faculty__asd">
+        <button aria-controls="asd" class="accordion-trigger">Asian Studies Division (ASD)
+        </button>
+        <div class="faculty-images clearfix" id="asd">
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Henry Em</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Sam Youl Lee</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Tomoko Seto</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Jaeyoun Won</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="faculty__tad">
+        <button aria-controls="tad" class="accordion-trigger">Techno-Art Division (TAD)
+        </button>
+        <div class="faculty-images clearfix" id="tad">
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Shin Cho</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Soojin Jun</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Younah Kang</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Beomsoo Kim</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Hee-Woong Kim</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Kyung Kyu Kim</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Taekyoung Kwon</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Bong Gyou Lee</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Choong C. Lee</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Jeehyun Lee</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Jungwoo Lee</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Jung Hoon Lee</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Keeheon Lee</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Sangwon Lee</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Zoonky Lee</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Hyoshin Park</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="faculty__issd">
+        <button aria-controls="issd" class="accordion-trigger">Integrated Social Sciences Division (ISSD)
+        </button>
+        <div class="faculty-images clearfix" id="issd">
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Seung-Mi Han</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Tae Yong Jung</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Donghun Kim</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Eungbin Kim</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Joocheol Kim</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Heejin Lee</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Sam Youl Lee</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Sun Goo Lee</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Samuel Y. Pang</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Joe Phillips</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Yul Sohn</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Kiwon Song</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Semee Yoon</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="faculty__ised">
+        <button aria-controls="ised" class="accordion-trigger">Integrated Science Engineering Division (ISED)
+        </button>
+        <div class="faculty-images clearfix" id="ised">
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Milan Balaz</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Eunji Cheong</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Yong Soo Cho</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Sehun Chun</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Sunglan Chung</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Byungchan Han</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Jungmin Han</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Ikyon Kim</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Jiwon Kim</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Jong Hak Kim</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">YoungSoo Kim</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Nam-On Ku</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Yun-Hee Lee</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Wan Namkung</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+            <figcaption>
+              <span class="faculty-name">Rajkumar Patel</span>
+              <a href="#">Read More<span class="fa fa-angle-right" aria-hidden="true"></span></a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </section>
+    <section class="faculty faculty--shinhan highlight">
+      <h2>Shinhan Distinguished Faculty</h2>
+      <div>
+        <p>Every year, UIC invites a number of distinguished visiting faculty from around the world to give public lectures and hold two-week intensive seminars. Since its inception in 2006, the Shinhan Distinguished Faculty Program has hosted 25 visits by leading scholars and experts. Participants have included winners of the Nobel Prize, world-renowned novelists, OECD officials, presidents of elite universities, and influential scholars in disciplines across the humanities and sciences. The Shinhan Distinguished Faculty Program is designed to offer UIC students the opportunity to interact closely with international luminaries in small class settings.</p>
+        <figure class="clearfix">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+          <figcaption>
+            <span class="faculty-name">Jc Beall (2018)</span>
+            <ul>
+              <li>Board of Trustees Distinguished Professor of Philosophy, University of Connecticut, Storrs CT USA</li>
+              <li>Founding Director, UCONN Logic Group (logic.uconn.edu), University of Connecticut, Storrs CT USA</li>
+              <li>Research Fellow, NDCPR, University of Notre Dame, South Bend IN USA, 2018-2019</li>
+              <li>Former Research Professor and/or Research Fellow in Philosophy/Logic at the Universities of St Andrews (Scotland)</li>
+              <li>Aberdeen (Scotland), Melbourne (Australia), and Tasmania (Australia)</li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure class="clearfix">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+          <figcaption>
+            <span class="faculty-name">David Armitage (2017)</span>
+            <ul>
+              <li>Lloyd C. Blankfein Professor of History, Harvard University</li>
+              <li>Chair, Department of History, Harvard University (2012-14, 2015-16)</li>
+              <li>Honorary Professor of History, University of Sydney</li>
+              <li>Honorary Fellow, St Catharine's College, Cambridge</li>
+              <li>B.A in English Literature, University of Cambridge (1986); Ph.D. in History, University of Cambridge (1992)</li>
+              <li>Litt.D., University of Cambridge (2015)</li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure class="clearfix">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+          <figcaption>
+            <span class="faculty-name">Gi-Wook Shin (2017)</span>
+            <ul>
+              <li>Professor of Sociology, Stanford University</li>
+              <li>Director, Shorenstein Asia-Pacific Research Center, Stanford University</li>
+              <li>Founding Director, Korea Program, Stanford University</li>
+              <li>Yonsei University (BA)/ University of Washington (MA/Ph.D.)</li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure class="clearfix">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+          <figcaption>
+            <span class="faculty-name">Chang-Rae Lee (2007~2008, 2013~2016)</span>
+            <ul>
+              <li>Professor of Creative Writing, Lewis Center for the Arts, Princeton University</li>
+              <li>Professor and Acting Director, Lewis Center for the Arts, Princeton University</li>
+              <li>Guggenheim Foundation Fellow, 2000-2001</li>
+              <li>M.F.A., University of Oregon</li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure class="clearfix">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+          <figcaption>
+            <span class="faculty-name">Roland Greene (2015)</span>
+            <ul>
+              <li>President of the Modern Language Association of America, 2015-2016</li>
+              <li>Mark Pigott KBE Professor, School of Humanities and Sciences, Stanford University</li>
+              <li>Professor of English and Comparative Literature, Stanford University</li>
+              <li>Ph.D. in English and American Literature, Princeton University, 1985</li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure class="clearfix">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+          <figcaption>
+            <span class="faculty-name">Graham Priest (2015)</span>
+            <ul>
+              <li>Distinguished Professor of Philosophy, Graduate Center, City University of New York</li>
+              <li>Boyce Gibson Professor Emeritus, University of Melbourne, Australia</li>
+              <li>Former President of Australasian Association for Logic</li>
+              <li>Litt.D., University of Melbourne, 2002</li>
+              <li>Ph.D. in Mathematics, London School of Economics, University of London, 1974</li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure class="clearfix">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+          <figcaption>
+            <span class="faculty-name">Kenneth Pomeranz (2014)</span>
+            <ul>
+              <li>University Professor of Modern Chinese History and in the College, University of Chicago</li>
+              <li>Member of the Stevanovich Institute on the Formation of Knowledge, University of Chicago</li>
+              <li>President of the American Historical Association, 2013-2014</li>
+              <li>Ph.D. in History, Yale University, 1988</li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure class="clearfix">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+          <figcaption>
+            <span class="faculty-name">Jean-Michel Rabaté (2014)</span>
+            <ul>
+              <li>Professor of English and Comparative Literature, University of Pennsylvania</li>
+              <li>Co-founder and senior curator of Slought Philadelphia, 2000-2016</li>
+              <li>Fellow of the American Academy of Arts and Sciences, 2008-2016</li>
+              <li>Former trustee of the James Joyce Foundation and President of the American Samuel Beckett Society, 2009-2012</li>
+              <li>Ph.D. summa cum laude, Sorbonne Paris-VIII</li>
+              <li>Ph.D. in Mathematics, London School of Economics, University of London, 1974</li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure class="clearfix">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+          <figcaption>
+            <span class="faculty-name">Catherine Gallagher (2013)</span>
+            <ul>
+              <li>Professor Emerita, Department of English, University of California, Berkeley</li>
+              <li>Former Ida May and William J. Eggers, Jr., Chair in English, University of California, Berkeley</li>
+              <li>Member of the Board of Trustee of the National Humanities Center, 2005-2006</li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure class="clearfix">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/anonymous-person.png" alt="">
+          <figcaption>
+            <span class="faculty-name">Martin E. Jay (2013)</span>
+            <ul>
+              <li>Sidney Hellman Ehrman Professor of History, University of California, Berkeley</li>
+              <li>Ph.D., Harvard University, 1971</li>
+              <li>London School of Economics, Junior Year Abroad, 1963-1964</li>
+            </ul>
+          </figcaption>
+        </figure>
+      </div>
+      <ul class="pagination clearfix">
+        <li>1</li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">4</a>
+        </li>
+        <li>
+          <a href="#">5</a>
+        </li>
+        <li>
+          <a href="#">6</a>
+        </li>
+        <li>
+          <a href="#">7</a>
+        </li>
+        <li>
+          <a href="#">8</a>
+        </li>
+        <li>
+          <a href="#">9</a>
+        </li>
+        <li>
+          <a href="#">Next</a><span><i class="fa fa-angle-right"></i></span>
+        </li>
+        <li>
+          <a href="#">Last</a><span><i class="fa fa-angle-right"></i></span>
+        </li>
+      </ul>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <ul class="footer__social-links clearfix">
+      <li aria-label="Facebook link">
+        <a href="https://www.facebook.com/UIC.YonseiUniversity" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-facebook-square fa-2x"></i>
+        </a>
+      </li>
+      <li aria-label="Instagram link">
+        <a href="https://www.instagram.com/uicyonsei/" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+      </li>
+    </ul>
+    <div class="footer-flex">
+      <ul class="footer__external-links">
+        <li><a href="#" target="_blank" rel="noopener noreferrer">Career Development Center</a></li>
+        <li><a href="https://dfk.yonsei.ac.kr/" target="_blank" rel="noopener noreferrer">Design Factory Korea</a></li>
+        <li><a href="https://uic.yonsei.ac.kr/writingcenter/default.asp" target="_blank" rel="noopener noreferrer">UIC Writing Center</a></li>
+        <li><a href="https://uic.yonsei.ac.kr/ycsi/default.asp" target="_blank" rel="noopener noreferrer">Yonsei Center for Social Innovation</a></li>
+      </ul>
+      <ul class="footer__internal-links">
+        <li><a href="../site-footer/academic-calendar.html">Academic Calendar</a></li>
+        <li><a href="../site-footer/academic-regulations/academic-regulations.html">Academic Regulations</a></li>
+        <li><a href="../site-footer/health-and-counseling/health-and-counseling.html">Health and Counseling</a></li>
+        <li><a href="../site-footer/maps-and-directions.html">Maps & Directions</a></li>
+        <li><a href="../site-footer/privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <ul class="footer__legal clearfix">
+      <li>
+        <address>Underwood International College, Yonsei University 50 Yonsei-ro, Seodaemun-gu, Seoul, 03722 Republic of Korea</address>
+      </li>
+      <li>© Underwood International College 2020</li>
+    </ul>
+  </footer>
+  
+  <script src="../js/components/navigation.js"></script>
+  <script src="../js/components/accordion.js"></script>
+</body>
+</html>

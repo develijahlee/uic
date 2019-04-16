@@ -1,0 +1,356 @@
+/* _sections-about.scss */
+
+/* UIC-ADVANTAGE.HTML
+   CAMPUS-LIFE.HTML
+-------------------------------------------------- */
+/* UIC ADVANTAGE */
+/* UIC DEAN */
+/* CAMPUS LIFE */
+/* FESTIVALS */
+.uic-advantage,
+.uic-dean,
+.campus-life,
+.festivals {
+  padding-left: calc(5% + 20px);
+  padding-right: calc(5% + 20px);
+  @include tablet {
+    padding-left: calc(12.5% + 20px);
+    padding-right: calc(12.5% + 20px);
+  }
+  > h2 {
+    text-align: center;
+  }
+  > h3 {
+    margin-top: 1em;
+  }
+  a {
+    display: inline;
+    max-width: fit-content;
+    text-decoration: none;
+    &:link, 
+    &:visited {
+      color: #3277ae;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      color: #be0f34;
+    } 
+  }
+  li {
+    line-height: 1.5;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* UIC DEAN  */
+/* FESTIVALS */
+.uic-dean,
+.festivals {
+  background: #f9f6ef;
+}
+
+/* MULTIMEDIA.HTML
+-------------------------------------------------- */
+// BROCHURES
+// LEAFLETS
+
+.multimedia {
+  display: none;
+  margin: 0 1.75em 0 1.75em;
+  @include tablet {
+    margin: 0 2.75em 0 2.75em; 
+  }
+  @include desktop--lg {
+    margin: 0 8em;
+  }
+  > h2 {
+    text-align: center;
+  }
+}
+
+.multimedia-input {
+  display: none;
+}
+
+#brochures-multimedia-tab:checked ~ .multimedia--brochures,
+#leaflets-multimedia-tab:checked ~ .multimedia--leaflets {
+  display: block;
+}
+
+.multimedia-labels {
+  margin: 0 1.75em 0 1.75em;
+  @include tablet {
+    margin: 0 2.75em 0 2.75em;  
+  }
+  @include desktop--lg {
+    margin: 0 8em;
+  }
+  > label {
+    display: inline-block;
+    margin: 0 .25em;
+    padding: 1em;
+    border: 1px solid #a79d96;
+    border-radius: .25em;
+    color: #3277ae;
+    text-align: center;
+    @include mobile {
+      display: block;
+      &:not(:last-child) {
+        margin-bottom: 1em;
+      }
+    }
+    &:hover,
+    &:focus {
+      color: #be0f34;
+      cursor: pointer;
+    }
+  }
+}
+
+.multimedia-table {
+  width: 98%;
+  margin: 0 auto 1em auto;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  text-align: center;
+  th {
+    padding: .5em;
+    background-color: #e7ecf4;
+    border: 1px solid #e0e0e0;
+    color: #666;
+  }
+  td {
+    padding: .5em;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    color: #666;
+  }
+}
+
+.multimedia-images {
+  > figure {
+    display: block;
+    float: left;
+    margin: 1%;
+    width: 48%;
+    height: 28em;
+    color: #000;
+    line-height: 1.5;
+    text-align: left;
+    text-decoration: none;
+    @include tablet {
+      width: 31%;
+    }
+    @include desktop--lg {
+      width: 23%;
+      height: 22em;
+    }
+    > img {
+      width: 100%;
+      background: #c2c2c2;
+    }
+    > figcaption {
+      > span {
+        display: block;
+      }
+      > a {
+        display: block;
+        text-decoration: none;
+        @include desktop--lg {
+          font-size: .95rem; //so "Read More" arrows don't line break on desktop--lg
+        }
+        > svg {
+          margin: 0 0 0 .25em;
+        }
+        &:link,
+        &:visited {
+          color: #006cb8;
+        }
+        &:hover,
+        &:focus, 
+        &:active {
+          color: #00548f;
+          text-decoration: underline;
+          > svg {
+            margin: 0 0 0 .5em;
+            transition: margin .25s ease;
+          }
+        }
+      }
+      .multimedia-name {
+        font-weight: 600;
+      }
+    }
+  } 
+}
+
+/* STUDENT-ORGANIZATIONS.HTML
+-------------------------------------------------- */
+.organizations-introduction {
+  padding-left: calc(5% + 20px);
+  padding-right: calc(5% + 20px);
+  @include tablet {
+    padding-left: calc(12.5% + 20px);
+    padding-right: calc(12.5% + 20px);
+  }
+}
+
+.organizations-overview {
+  background: #f9f6ef;
+}
+
+.organizations-overview {
+  > h2 {
+    color: #000;
+    text-align: center;
+  }
+  &__grid {
+    > a,
+      a:link,
+      a:visited {
+      position: relative;
+      display: block;
+      margin: 1.75em;
+      @include tablet {
+        margin: 1em;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        > figure {
+          overflow: hidden;
+          .preview-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: #000;
+            opacity: .4;
+            z-index: 1;
+          }
+          > figcaption {
+            z-index: 2;
+          }
+        }
+      }
+      > figure {
+        position: relative;
+        margin: 0;
+        > img {
+          width: 100%;
+          height: 20em;
+          object-fit: cover;
+          @include mobile--sm {
+            height: 14em;
+          }
+          @include tablet {
+            height: 14em;
+          }
+          @include desktop {
+            height: 18em;
+          }
+        }
+        > figcaption {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          padding: .5em;
+          background: #333;
+          color: #fff;
+          text-align: center;
+          > h3 {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.student-club {
+  > h2 {
+    text-align: center;
+  }
+  > img {
+    display: block;
+    margin: 0 auto;
+    height: 18em;
+    width: calc(90% - 40px);
+    object-fit: cover;
+    @include mobile--sm {
+      height: 14em;
+    }
+    @include tablet {
+      height: 20em;
+      width: calc(75% - 40px);
+    }
+    @include desktop {
+      height: 25em;
+    }
+  }
+  > p {
+    padding-left: calc(5% + 20px);
+    padding-right: calc(5% + 20px);
+    @include tablet {
+      padding-left: calc(12.5% + 20px);
+      padding-right: calc(12.5% + 20px);
+    }
+  }
+  > ul {
+    padding-left: calc(5% + 4em);
+    padding-right: calc(5% + 4em);
+    @include tablet {
+      padding-left: calc(12.5% + 3em);
+      padding-right: calc(12.5% + 3em);
+    }
+  }
+  a {
+    text-decoration: none;
+    &:link, 
+    &:visited {
+      color: #3277ae;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      color: #be0f34;
+    } 
+  }
+  li {
+    line-height: 1.5;
+  }
+}
+
+@supports (display: flex) { 
+  /* MULTIMEDIA.HTML
+  -------------------------------------------------- */
+  // BROCHURES
+  // LEAFLETS
+  .multimedia-labels {
+    display: flex;
+    justify-content: flex-end;
+    @include mobile {
+      flex-flow: column;
+    }
+  }
+  
+  .multimedia-images {
+    display: flex;
+    flex-wrap: wrap;
+    > figure {
+      height: initial;
+      @include tablet {
+        width: 31%;
+      }
+      @include desktop--lg {
+        width: 23%;
+      }
+    }
+  }
+}

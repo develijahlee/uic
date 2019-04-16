@@ -1,0 +1,29 @@
+// Base
+@import "base/reset";
+@import "base/variables";
+@import "base/mixins";
+@import "base/buttons";
+
+// Components
+@import "components/typography";
+@import "components/navigation";
+@import "components/carousel";
+@import "components/footer";
+//@import "components/carousel";
+
+// Grid
+@import "components/grids/grid-homepage";
+@import "components/grids/grid-news";
+@import "components/grids/grid-academics";
+@import "components/grids/grid-admissions";
+@import "components/grids/grid-about";
+@import "components/grids/grid-footer";
+
+// Sections
+@import "components/sections/sections-homepage";
+@import "components/sections/sections-news";
+@import "components/sections/sections-academics";
+@import "components/sections/sections-admissions";
+@import "components/sections/sections-about";
+@import "components/sections/sections-site-header";
+@import "components/sections/sections-site-footer";

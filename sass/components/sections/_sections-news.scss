@@ -1,0 +1,328 @@
+/* _sections-news.scss */
+
+/* NEWS.HTML
+-------------------------------------------------- */
+/* ACADEMIC AFFAIRS PREVIEW */
+/* STUDENT SERVICES PREVIEW */
+/* EVENTS PREVIEW */
+.academic-affairs-preview {
+  background: #fff;
+}
+
+.student-services-preview {
+  background: #f9f6ef;
+}
+
+.events-preview {
+  background: #fff;  
+}
+
+.academic-affairs-preview,
+.student-services-preview,
+.events-preview {
+  > h2 {
+    color: #000;
+    text-align: center;  
+  }
+  &__grid {
+    @include tablet {
+      margin: 1.75em;
+    }
+    @include desktop--lg {
+      margin: 1.75em 8em;
+    }
+    > figure {
+      position: relative;
+      margin: 1.75em;
+      padding: 1em;
+      min-height: 5em;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,.15), 0 3px 3px rgba(0,0,0,.15);
+      &:hover,
+      &:focus-within {
+        box-shadow: 0 0 10px rgba(0,0,0,.2), 0 7px 10px rgba(0,0,0,.2);
+        transition: box-shadow .25s ease-in-out;
+      }
+      @include tablet {
+        margin: 1em;
+      }
+    > h3 {
+      margin: 0 0 0 3.5em;
+        > a {
+          text-decoration: none;
+          &:link,
+          &:visited {
+            color: #000;
+          }
+          &:hover,
+          &:focus,
+          &:active {
+            color: #006cb8;
+          }
+        }
+      } 
+    } 
+  }
+}
+
+.news-date {
+  position: absolute; // container is immediate parent "figure"
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 1em .75em;
+  max-width: 4em; // for google translate that sometimes spills text outside container
+  background: #333;
+  color: #ddd; // for google translate that sometimes changes text to black
+  line-height: 1.5em;
+  text-align: center;
+  &__month {
+    display: block;
+  }
+  &__day {
+    display: block;
+  }
+}
+
+/* NEWS.HTML
+-------------------------------------------------- */
+/* NEWSLETTER PREVIEW */
+.newsletter-preview {
+  background: #f9f6ef;
+  > h2 {
+    text-align: center;  
+  }
+  &__grid {
+    margin: 0 0 1.75em 0;
+    padding: 0 1.75em;
+    @include desktop--lg {
+      padding: 0 8em;
+    }
+    > article {
+      padding: 0 1em;
+      > a {
+        display: block;
+        margin: 0 auto;
+        max-width: 32em;
+        text-decoration: none;
+        &:link, 
+        &:visited {
+          color: #000;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+          color: #006cb8;
+        }
+       > figure {
+          margin: 2em auto 1em auto;
+          > img {
+            display: block;
+            width: 100%;
+            height: 15em;
+            object-fit: cover;
+          }
+          > figcaption {
+            margin: 1em 0 0 0;
+            > p {
+              margin: 0;
+              color: #002171;
+              font-weight: 600;
+            }
+          }
+        } 
+      }  
+    }
+  }
+}
+
+/* ACADEMIC-AFFAIRS.HTML
+   STUDENT-SERVICES.HTML
+   EVENTS.HTML
+-------------------------------------------------- */
+/* ACADEMIC AFFAIRS */
+/* STUDENT SERVICES */
+/* EVENTS */
+.academic-affairs,
+.student-services,
+.events {
+  > h2 {
+    text-align: center;
+  }
+  &__grid {
+    padding: 0 1em;
+    @include tablet {
+      padding: 0 1.75em;
+    }
+    > a {
+      display: block;
+      padding: 1em;
+      text-decoration: none;
+      &:not(:last-child) {
+        border-bottom: 1px solid rgb(224, 222, 217);
+      }
+      > figure {
+        position: relative;
+        margin: 0;
+        padding: 2em;
+      }
+      &:link, 
+      &:visited {
+        color: #000;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        .archive-heading {
+          color: #006cb8;
+        }
+      } 
+    }
+  }
+}
+
+.archive-date {
+  position: absolute; // containing block is immediate parent
+  top: 0;
+  left: 0;
+  padding: .5em 1em;
+  line-height: 1.5em;
+  background: #333;
+  color: #ddd;
+  text-align: center;
+  &__month {
+    display: block;
+  }
+}
+
+.archive-heading {
+  position: absolute; // containing block is immediate parent
+  top: 0;
+  left: 4em;
+  @include tablet {
+    top: .5em;
+  }
+}
+
+/* NEWSLETTER.HTML
+-------------------------------------------------- */
+.newsletter {
+  > div {
+    padding: 2em 0 2em 0;
+  }
+  > div:nth-child(2) {
+    padding: 1em 0 2em 0;
+  }
+  > h2 {
+    text-align: center;
+  }
+  &__focus,
+  &__news-and-activities,
+  &__alumni-and-uic-community {
+    > h3 {
+      text-align: center;
+    }
+  }
+  &__news-and-activities {
+    background: #f9f6ef;
+  }
+  &-grid {
+    padding: 0 1em;
+    @include tablet {
+      padding: 0 1.75em;
+    }
+    @include desktop--lg {
+      padding: 0 8em;
+    }
+    > article {
+      padding: 0 1em;
+      > a {
+        display: block;
+        margin: 0 auto;
+        max-width: 30em;
+        text-decoration: none;
+        &:link, 
+        &:visited {
+          color: #000;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+          color: #006cb8;
+        }
+       > figure {
+          margin: 2em auto 1em auto;
+          > img {
+            display: block;
+            width: 100%;
+            height: 15em;
+            object-fit: cover;
+          }
+          > figcaption {
+            margin: 1em 0 0 0;
+          }
+        } 
+      }  
+    }
+  }
+}
+
+@supports (display: flex) {
+/* NEWS.HTML
+-------------------------------------------------- */
+/* ACADEMIC AFFAIRS PREVIEW */
+/* STUDENT SERVICES PREVIEW */
+/* EVENTS PREVIEW */
+ .academic-affairs-preview, 
+ .student-services-preview,
+ .events-preview {
+  &__grid {
+   > figure {
+     display: flex;
+     align-items: center;
+     > h3 {
+       margin: 0 0 0 3em;
+     }
+   } 
+  }
+ }
+  .news-date {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: .5em .75em;
+    &__month {
+      display: inline;
+    }
+    &__day {
+      display: inline;
+    }
+  }
+/* ACADEMIC-AFFAIRS.HTML
+   STUDENT-SERVICES.HTML
+   EVENTS.HTML
+-------------------------------------------------- */
+/* ACADEMIC AFFAIRS */
+/* STUDENT SERVICES */
+/* EVENTS */
+  .academic-affairs,
+  .student-services,
+  .events {
+    &__grid {
+      > a {
+        > figure {
+          display: flex;
+          align-items: center;
+          padding: 0;
+        }
+      }
+    } 
+  }
+  .archive-date {
+    position: static;
+    margin: 0 1.5em 0 0;
+  }
+  .archive-heading {
+    position: static;
+  }
+}

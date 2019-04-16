@@ -1,0 +1,43 @@
+/* _mixins.scss */
+
+@mixin mobile--sm {
+  @media (max-width: 330px) {
+    @content; // iPhone 5 range
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+/*
+@mixin mobile--landscape {
+  @media (max-width: #{$tablet-width - 1px}) and (orientation: landscape) {
+    @content;
+  }
+}
+*/
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) /*and (max-width: #{$desktop-width - 1px}) */ {
+    @content;
+  }
+}
+/*
+@mixin tablet--landscape {
+  @media (min-width: #{$tablet-width -1px}) and (orientation: landscape)  {
+    @content;
+  }
+}
+*/
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin desktop--lg {
+  @media (min-width: #{$desktop-lg-width}) {
+    @content;
+  }
+}

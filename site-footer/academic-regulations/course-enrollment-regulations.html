@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Course Enrollment/Add & Drop/Withdrawal/Re-take - Underwood International College</title>
+  <link rel="icon" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/yonsei-logo-32x32.png" type="image/png">
+  <link rel="stylesheet" href="../../sass/main.processed.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.6.0/js/all.js" integrity="sha384-z9ZOvGHHo21RqN5De4rfJMoAxYpaVoiYhuJXPyVmSs8yn20IE3PmBM534CffwSJI" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav clearfix"><!-- ".nav-drawer__list" must overflow "nav" on desktop -->
+      <div class="nav__bar">
+        <a class="home-link" href="../../index.html">
+          <img class="home-link__logo" src="../../yonseiEmblem.svg" alt="Yonsei emblem">
+          <h1 class="home-link__heading">
+            <span class="mobile-heading">UIC</span><span class="tablet-heading">Underwood <br> International <br> College</span>
+          </h1>
+        </a>
+        <div class="nav-row">
+          <form class="search-bar" action="#">
+            <input class="search-bar__text" type="search" placeholder="Search..." name="search">
+            <button class="search-bar__btn" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+          <button type="button" aria-label="navigation menu" aria-controls="navCabinet" aria-expanded="false" class="main-nav-button">
+            <i class="fas fa-bars fa-2x"></i>
+          </button>
+        </div>
+      </div>
+      <div class="nav__cabinet" id="navCabinet">
+        <ul class="nav-list nav-list--primary clearfix"><!-- ".nav-drawer__list" must overflow ".nav-list--primary" on desktop -->
+          <li class="nav-drawer">
+            <a href="../../news/news-preview.html">News</a>
+            <button type="button" class="nav-drawer__btn">
+              <i class="fas fa-angle-down fa-2x"></i>
+            </button>
+            <ul class="nav-drawer__list">
+              <li><a href="../../news/academic-affairs.html" class="nav-link">Academic Affairs</a></li>
+              <li><a href="../../news/student-services.html" class="nav-link">Student Services</a></li>
+              <li><a href="../../news/events.html" class="nav-link">Events</a></li>
+              <li><a href="../../news/newsletter.html" class="nav-link">Newsletter</a></li>
+            </ul>
+          </li>
+          <li class="nav-drawer">
+            <a href="../../academics/academics-preview.html">Academics</a>
+            <button type="button" class="nav-drawer__btn">
+              <i class="fas fa-angle-down fa-2x"></i>
+            </button>
+            <ul class="nav-drawer__list">
+              <li><a href="../../academics/ud/ud.html" class="nav-link">Underwood Division</a></li>
+              <li><a href="../../academics/hass/hass.html" class="nav-link">Humanities, Arts, and Social Sciences</a></li>
+              <li><a href="../../academics/ised/ised.html" class="nav-link">Integrated Science and Engineering Division</a></li>
+              <li><a href="../../academics/cc/cc.html" class="nav-link">Common Curriculum</a></li>
+              <li><a href="../../academics/uic-programs/uic-programs.html" class="nav-link">UIC Programs</a></li>
+              <li><a href="../../academics/study-abroad/study-abroad.html" class="nav-link">Study Abroad</a></li>
+            </ul>
+          </li>
+          <li class="nav-drawer">
+            <a href="../../admissions/admissions-preview.html">Admissions</a>
+            <button type="button" class="nav-drawer__btn">
+              <i class="fas fa-angle-down fa-2x"></i>
+            </button>
+            <ul class="nav-drawer__list">
+              <li><a href="../../admissions/application/application.html" class="nav-link">Applying to UIC</a></li>
+              <li><a href="../../admissions/tuition-and-scholarships.html" class="nav-link">Tuition and Scholarships</a></li>
+              <li><a href="../../admissions/housing.html" class="nav-link">Housing</a></li>
+              <li><a href="../../admissions/visa-alien-registration.html" class="nav-link">Visa/Alien Registration</a></li>
+              <li><a href="../../admissions/banking-and-insurance.html" class="nav-link">Banking and Insurance</a></li>
+              <li><a href="../../admissions/frequently-asked-questions.html" class="nav-link">Frequently Asked Questions</a></li>
+            </ul>
+          </li>
+          <li class="nav-drawer">
+            <a href="../../about/about-preview.html">About</a>
+            <button class="nav-drawer__btn">
+              <i class="fas fa-angle-down fa-2x"></i>
+            </button>
+            <ul class="nav-drawer__list">
+              <li><a href="../../about/uic-advantage.html" class="nav-link">UIC Advantage</a></li>
+              <li><a href="../../about/campus-life.html" class="nav-link">Campus Life</a></li>
+              <li><a href="../../about/organizations/student-organizations.html" class="nav-link">Student Organizations</a></li>
+              <li><a href="../../about/multimedia.html" class="nav-link">Multimedia</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav-list nav-list--secondary">
+          <li class="nav-drawer">
+            <a href="https://uic.yonsei.ac.kr/apply/default.asp?mid=m01" target="_blank" rel="noopener noreferrer">Apply</a>
+          </li>
+           <li class="nav-drawer">
+            <a href="../../site-header/contact-us.html">Contact Us</a>
+          </li>
+          <li class="nav-drawer">
+            <a href="../../site-header/faculty.html">Faculty</a>
+          </li>
+          <li class="nav-drawer">
+            <a href="../../site-header/alumni.html">Alumni</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <ul aria-label="breadcrumb navigation" class="breadcrumb clearfix">
+    <li>
+      <a href="../../index.html">Home</a><span><i class="fa fa-angle-right"></i></span>
+    </li>
+    <li>
+      <a href="academic-regulations.html">Academic Regulations</a><span><i class="fa fa-angle-right"></i></span>
+    </li>
+    <li>Course Enrollment/Add & Drop/Withdrawal/Re-take</li>
+  </ul>
+  
+  <main>
+    <section class="academic-regulations-programs highlight--first">
+      <section>
+        <h3>Course Enrollment Procedure</h3>
+        <p>Students who do not attend 1/3 of the class or more in a single semester will not be able to receive the credit for the course (and will be automatically graded “F” for the course).</p>
+        <h4>Important Notes for Course Enrollment</h4>
+        <p>Always take into consideration the maximum number of credits per semester and your degree requirements when finalizing your course schedule. Discuss any queries with your academic advisor.</p>
+        <p>Students are allowed to enroll in maximum of 18-19 credits per semester. Students are allowed to register 3 extra credits for achieving GPA above 3.75 in the previous semester.</p>
+        <p>Students who earned less than 15 credits are not eligible to apply for academic honors. However, students who have completed at least 12 credits are allowed to apply for university scholarships.</p>
+        <h4>Course Enrollment Tips</h4>
+        <p>Check the course catalogue at the Yonsei Portal before course enrollment to check for any changes in course information.</p>
+        <p>Prepare 2-3 options for your course schedule, taking into consideration your interest, time frame and degree requirements.</p>
+        <p>Speed is the key for course enrollment, especially during the freshman year. If your computer is slow, we strongly recommend you to visit the school computer labs or other private PC cafes to conduct your course enrollment.</p>
+        <p>Logging into multiple devices is prohibited. When multiple logins are made with the same ID, only the last user to login will be able to access the server.</p>
+      </section>
+      <section>
+        <h3>Excused Absence</h3>
+        <p>Course enrollment period: During February/August (schedules will be announced) via the <a href="http://portal.yonsei.ac.kr/main/indexe.jsp" target="_blank" rel="noopener noreferrer">Yonsei Portal Service</a></p>
+        <p>Students can receive advice regarding course enrollment from their Academic advisors.</p>
+        <p>Refer to the course syllabi and course catalogue available online on the Yonsei Portal System for information regarding the course time, location and instructor.</p>
+        <p>Go to the course enrollment page at the Yonsei Portal: Login is available at 8:00 a.m. After you login, you may select your desired courses and put them to the wish list.</p>
+        <p>Course enrollment begins at 9:00 a.m. Click on the courses you wish to take to confirm enrollment (For specific details regarding course enrollment, refer to the manual at the course enrollment login page).</p>
+      </section>
+      <section>
+        <h3>Course Add and Drop</h3>
+        <p>Students may add or drop courses at the Yonsei Portal during the Add & Drop Period.</p>
+        <p>Course add and drop begins 1 hour earlier than course enrollment. Login starts at 7:00 a.m. The actual course add & drop begins at 8:00 a.m.</p>
+      </section>
+      <section>
+        <h3>Course Withdrawal</h3>
+        <p>Students may choose to withdraw from the courses if, due to certain reasons, the student finds they will not be able to continue taking the course. The course withdrawal period takes place within five weeks after semester begins. Check the notices at the UIC website or the Yonsei University website for the specific course withdrawal schedule.</p>
+        <p>Students may withdraw from the course through the student portal during the course withdrawal period.</p>
+        <p>Students are strongly recommended to consult their withdrawal with the academic advisors in advance, as the course they wish to withdraw may be a pre-major requirement.</p>
+        <h4>Important Notes on Course Withdrawal</h4>
+        <p>From 2009, a withdrawn course will not be counted towards the GPA and will not appear on the transcript.</p>
+        <p>Students cannot take another course as a replacement to a withdrawn course.</p>
+        <p>Students who have withdrawn a course cannot apply for additional 3 credits and will be disqualified from the (highest/high) honor roll and highest/high honors award (at commencement) regardless of the student's overall GPA.</p>
+        <p>Students must be enrolled in at least 1 credit after withdrawal.</p>
+        <p>Students can withdraw P/NP courses, but they may not withdraw Volunteer Service & RC Self-Governing Activity 1 and 2.</p>
+        <p>Students are still eligible for scholarships if they are still enrolled for over 12 credits after the withdrawal.</p>
+        <p>Withdrawn courses will not appear on the transcript. However, if the students repeat the withdrawn course, the record for the previous withdrawal will remain at the Yonsei Portal.</p>
+      </section>
+      <section>
+        <h3>Course Repeat Policy</h3>
+        <p>According to the UIC course repeat policy, students admitted in 2013 or thereafter may repeat a course up to 3 times (‘3-time opportunity’) until graduation with no additional approval.</p>
+        <p>Common Curriculum courses (course category: CC) may not be repeated unless a student received ‘F’ for the course. If a student decides to repeat the course, the highest grade that the student can receive is an A0 (4.0) (Students cannot receive an A+).</p>
+        <p>If a student fails (receive 'F') a mandatory course for degree requirement, the student may repeat the course without using the 3-time opportunity but previously received 'F' will also count towards the GPA.</p>
+        <p>If a student enrolls in a course for two or more times, only the course credits and grade of the most recent course will be counted for fulfilling the degree requirements and GPA.</p>
+        <p>Note that even if a student received 'F' for the most recent course, previously received grade will not be counted towards the degree requirements.</p>
+        <p>Previously received academic warning will remain in effect even if a student’s GPA improves by repeating a course.</p>
+      </section>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <ul class="footer__social-links clearfix">
+      <li aria-label="Facebook link">
+        <a href="https://www.facebook.com/UIC.YonseiUniversity" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-facebook-square fa-2x"></i>
+        </a>
+      </li>
+      <li aria-label="Instagram link">
+        <a href="https://www.instagram.com/uicyonsei/" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+      </li>
+    </ul>
+    <div class="footer-flex">
+      <ul class="footer__external-links">
+        <li><a href="#" target="_blank" rel="noopener noreferrer">Career Development Center</a></li>
+        <li><a href="https://dfk.yonsei.ac.kr/" target="_blank" rel="noopener noreferrer">Design Factory Korea</a></li>
+        <li><a href="https://uic.yonsei.ac.kr/writingcenter/default.asp" target="_blank" rel="noopener noreferrer">UIC Writing Center</a></li>
+        <li><a href="https://uic.yonsei.ac.kr/ycsi/default.asp" target="_blank" rel="noopener noreferrer">Yonsei Center for Social Innovation</a></li>
+      </ul>
+      <ul class="footer__internal-links">
+        <li><a href="../academic-calendar.html">Academic Calendar</a></li>
+        <li><a href="../academic-regulations/academic-regulations.html">Academic Regulations</a></li>
+        <li><a href="../health-and-counseling/health-and-counseling.html">Health and Counseling</a></li>
+        <li><a href="../maps-and-directions.html">Maps & Directions</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <ul class="footer__legal clearfix">
+      <li>
+        <address>Underwood International College, Yonsei University 50 Yonsei-ro, Seodaemun-gu, Seoul, 03722 Republic of Korea</address>
+      </li>
+      <li>© Underwood International College 2020</li>
+    </ul>
+  </footer>
+  
+  <script src="../../js/components/navigation.js"></script>
+</body>
+</html>

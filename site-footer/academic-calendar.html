@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Academic Calendar - Underwood International College</title>
+  <link rel="icon" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1330393/yonsei-logo-32x32.png" type="image/png">
+  <link rel="stylesheet" href="../sass/main.processed.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.6.0/js/all.js" integrity="sha384-z9ZOvGHHo21RqN5De4rfJMoAxYpaVoiYhuJXPyVmSs8yn20IE3PmBM534CffwSJI" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav clearfix"><!-- ".nav-drawer__list" must overflow "nav" on desktop -->
+      <div class="nav__bar">
+        <a class="home-link" href="../index.html">
+          <img class="home-link__logo" src="../yonseiEmblem.svg" alt="Yonsei emblem">
+          <h1 class="home-link__heading">
+            <span class="mobile-heading">UIC</span><span class="tablet-heading">Underwood <br> International <br> College</span>
+          </h1>
+        </a>
+        <div class="nav-row">
+          <form class="search-bar" action="#">
+            <input class="search-bar__text" type="search" placeholder="Search..." name="search">
+            <button class="search-bar__btn" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+          <button type="button" aria-label="navigation menu" aria-controls="navCabinet" aria-expanded="false" class="main-nav-button">
+            <i class="fas fa-bars fa-2x"></i>
+          </button>
+        </div>
+      </div>
+      <div class="nav__cabinet" id="navCabinet">
+        <ul class="nav-list nav-list--primary clearfix"><!-- ".nav-drawer__list" must overflow ".nav-list--primary" on desktop -->
+          <li class="nav-drawer">
+            <a href="../news/news-preview.html">News</a>
+            <button type="button" class="nav-drawer__btn">
+              <i class="fas fa-angle-down fa-2x"></i>
+            </button>
+            <ul class="nav-drawer__list">
+              <li><a href="../news/academic-affairs.html" class="nav-link">Academic Affairs</a></li>
+              <li><a href="../news/student-services.html" class="nav-link">Student Services</a></li>
+              <li><a href="../news/events.html" class="nav-link">Events</a></li>
+              <li><a href="../news/newsletter.html" class="nav-link">Newsletter</a></li>
+            </ul>
+          </li>
+          <li class="nav-drawer">
+            <a href="../academics/academics-preview.html">Academics</a>
+            <button type="button" class="nav-drawer__btn">
+              <i class="fas fa-angle-down fa-2x"></i>
+            </button>
+            <ul class="nav-drawer__list">
+              <li><a href="../academics/ud/ud.html" class="nav-link">Underwood Division</a></li>
+              <li><a href="../academics/hass/hass.html" class="nav-link">Humanities, Arts, and Social Sciences</a></li>
+              <li><a href="../academics/ised/ised.html" class="nav-link">Integrated Science and Engineering Division</a></li>
+              <li><a href="../academics/cc/cc.html" class="nav-link">Common Curriculum</a></li>
+              <li><a href="../academics/uic-programs/uic-programs.html" class="nav-link">UIC Programs</a></li>
+              <li><a href="../academics/study-abroad/study-abroad.html" class="nav-link">Study Abroad</a></li>
+            </ul>
+          </li>
+          <li class="nav-drawer">
+            <a href="../admissions/admissions-preview.html">Admissions</a>
+            <button type="button" class="nav-drawer__btn">
+              <i class="fas fa-angle-down fa-2x"></i>
+            </button>
+            <ul class="nav-drawer__list">
+              <li><a href="../admissions/application/application.html" class="nav-link">Applying to UIC</a></li>
+              <li><a href="../admissions/tuition-and-scholarships.html" class="nav-link">Tuition and Scholarships</a></li>
+              <li><a href="../admissions/housing.html" class="nav-link">Housing</a></li>
+              <li><a href="../admissions/visa-alien-registration.html" class="nav-link">Visa/Alien Registration</a></li>
+              <li><a href="../admissions/banking-and-insurance.html" class="nav-link">Banking and Insurance</a></li>
+              <li><a href="../admissions/frequently-asked-questions.html" class="nav-link">Frequently Asked Questions</a></li>
+            </ul>
+          </li>
+          <li class="nav-drawer">
+            <a href="../about/about-preview.html">About</a>
+            <button class="nav-drawer__btn">
+              <i class="fas fa-angle-down fa-2x"></i>
+            </button>
+            <ul class="nav-drawer__list">
+              <li><a href="../about/uic-advantage.html" class="nav-link">UIC Advantage</a></li>
+              <li><a href="../about/campus-life.html" class="nav-link">Campus Life</a></li>
+              <li><a href="../about/organizations/student-organizations.html" class="nav-link">Student Organizations</a></li>
+              <li><a href="../about/multimedia.html" class="nav-link">Multimedia</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav-list nav-list--secondary">
+          <li class="nav-drawer">
+            <a href="https://uic.yonsei.ac.kr/apply/default.asp?mid=m01" target="_blank" rel="noopener noreferrer">Apply</a>
+          </li>
+          <li class="nav-drawer">
+            <a href="../site-header/contact-us.html">Contact Us</a>
+          </li>
+          <li class="nav-drawer">
+            <a href="../site-header/faculty.html">Faculty</a>
+          </li>
+          <li class="nav-drawer">
+            <a href="../site-header/alumni.html">Alumni</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <ul aria-label="breadcrumb navigation" class="breadcrumb clearfix">
+    <li>
+      <a href="../index.html">Home</a><span><i class="fa fa-angle-right"></i></span>
+    </li>
+    <li>Academic Calendar</li>
+  </ul>
+  
+  <main>
+    <section class="academic-calendar academic-calendar--current-year highlight--first">
+      <h2>2020 Academic Calendar</h2>
+      <p><a href="#">Download</a> a spreadsheet of past academic calendars</p>
+      <p><a href="#">Download</a> a spreadsheet of future academic calendars</p>
+      <table>
+        <caption>2020 Academic Calendar</caption>
+        <colgroup span="3"></colgroup>
+        <thead>
+          <tr>
+            <th scope="col">Month</th>
+            <th scope="col">Date</th>
+            <th scope="col">Event</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" rowspan="2">January</th>
+            <td>01 Mon</td>
+            <td>New Year's Day</td>
+          </tr>
+          <tr>
+            <td>22 Mon</td>
+            <td>Application for Graduation or Deferment for Aug. 2020 begins</td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="6">Feburary</th>
+            <td>01 Thu</td>
+            <td>Application for Leave of Absence begins</td>
+          </tr>
+          <tr>
+            <td>06 Tue</td>
+            <td>Application for Graduation or Deferment for Aug. 2017 due</td>
+          </tr>
+          <tr>
+            <td>07 Wed - 13 Tue</td>
+            <td>Course Enrollment Period for 2018 Spring Semester</td>
+          </tr>
+          <tr>
+            <td>21 Wed - 27 Sat</td>
+            <td>Tuition Payment Period for 2018 Spring Semester (Continuing Students)</td>
+          </tr>
+          <tr>
+            <td>25 Sun</td>
+            <td>Commencement Chapel</td>
+          </tr>
+          <tr>
+            <td>26 Mon</td>
+            <td>Returning Application due</td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="6">March</th>
+            <td>01 Thu</td>
+            <td>Independence Movement Day</td>
+          </tr>
+          <tr>
+            <td>02 Fri</td>
+            <td>1st Day of Class for 2018 Spring Semester</td>
+          </tr>
+          <tr>
+            <td>07 Wed - 09 Fri</td>
+            <td>Course Add and Drop Period</td>
+          </tr>
+          <tr>
+            <td>12 Mon - 14 Wed</td>
+            <td>Late Payment of Tuition</td>
+          </tr>
+          <tr>
+            <td>15 Thu</td>
+            <td>Application of General Leave of Absence (for full tuition refund) due</td>
+          </tr>
+          <tr>
+            <td>19 Mon - 23 Fri</td>
+            <td>Application Period for Early Graduation</td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="5">April</th>
+            <td>01 Mon</td>
+            <td>Easter Sunday</td>
+          </tr>
+          <tr>
+            <td>03 Tue - 05 Thu</td>
+            <td>Course Withdrawal Period</td>
+          </tr>
+          <tr>
+            <td>09 Mon</td>
+            <td>One-third of the Semester ends</td>
+          </tr>
+          <tr>
+            <td>18 Wed - 24 Tue</td>
+            <td>Midterm Examinations</td>
+          </tr>
+          <tr>
+            <td>23 Mon - 27 Fri</td>
+            <td>Application Period for Affiliation Change</td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="5">May</th>
+            <td>05 Fri</td>
+            <td>Children's Day</td>
+          </tr>
+          <tr>
+            <td>12 Sat</td>
+            <td>Yonsei University Foundation Day</td>
+          </tr>
+          <tr>
+            <td>16 Wed</td>
+            <td>Two-thirds of the Semester ends</td>
+          </tr>
+          <tr>
+            <td>16 Wed</td>
+            <td>Application for General Leave fo Absence (Enrolled Students) due</td>
+          </tr>
+          <tr>
+            <td>22 Tue</td>
+            <td>Buddha's Birthday</td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="7">June</th>
+            <td>01 Fri</td>
+            <td>Application for Leave of Absence for Illness due</td>
+          </tr>
+          <tr>
+            <td>06 Wed</td>
+            <td>Memorial Day</td>
+          </tr>
+          <tr>
+            <td>08 Fri - 21 Thu</td>
+            <td>Study Period & Final Examinations</td>
+          </tr>
+          <tr>
+            <td>22 Fri</td>
+            <td>Summer Break begins</td>
+          </tr>
+          <tr>
+            <td>25 Mon</td>
+            <td>Application for Double Major begins</td>
+          </tr>
+          <tr>
+            <td>28 Thu</td>
+            <td>Deadline for Submitting Grades for 2018 Spring Semester</td>
+          </tr>
+          <tr>
+            <td>29 Fri</td>
+            <td>Application for Double Major due</td>
+          </tr>
+          <tr>
+            <th scope="row">July</th>
+            <td>23 Mon</td>
+            <td>Application for Graduation or Deferment for Feb. 2019 begins</td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="9">August</th>
+            <td>01 Wed</td>
+            <td>	Application for Leave of Absence begins</td>
+          </tr>
+          <tr>
+            <td>07 Tue</td>
+            <td>Application for Graduation or Deferment for Feb. 2019 due</td>
+          </tr>
+          <tr>
+            <td>07 Wed - 14 Tue</td>
+            <td>Course Enrollement Period for 2018 Fall Semester</td>
+          </tr>
+          <tr>
+            <td>15 Wed</td>
+            <td>Independence Day</td>
+          </tr>
+          <tr>
+            <td>24 Fri</td>
+            <td>Tuition Payment Period for 2018 Fall Semester begins</td>
+          </tr>
+          <tr>
+            <td>27 Mon</td>
+            <td>Returning Application due</td>
+          </tr>
+          <tr>
+            <td>30 Thu</td>
+            <td>Tuition Payment Period for 2018 Fall Semester ends</td>
+          </tr>
+          <tr>
+            <td>31 Fri</td>
+            <td>Summer Commencement</td>
+          </tr>
+          <tr>
+            <td>31 Fri</td>
+            <td>Summer Break ends</td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="6">September</th>
+            <td>03 Mon</td>
+            <td>1st Day of Class for 2018 Fall Semester</td>
+          </tr>
+          <tr>
+            <td>06 Thu - 10 Mon</td>
+            <td>Course Add and Drop Period</td>
+          </tr>
+          <tr>
+            <td>12 Wed - 14 Fri</td>
+            <td>Late Tuition Payment Period</td>
+          </tr>
+          <tr>
+            <td>17 Mon</td>
+            <td>Application for General Leave of Absence (for full tuition refund) due</td>
+          </tr>
+          <tr>
+            <td>23 Sun - 26 Wed</td>
+            <td>Chuseok (Korean Thanksgiving) Holidays</td>
+          </tr>
+          <tr>
+            <td>28 Fri</td>
+            <td>Application for Early Graduation begins</td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="8">October</th>
+            <td>02 Tue - 05 Fri</td>
+            <td>Course Withdrawal Period</td>
+          </tr>
+          <tr>
+            <td>03 Wed</td>
+            <td>National Foundation Day</td>
+          </tr>
+          <tr>
+            <td>05 Fri</td>
+            <td>Application for Early Graduation begins</td>
+          </tr>
+          <tr>
+            <td>09 Thu</td>
+            <td>Hangul Proclamation Day</td>
+          </tr>
+          <tr>
+            <td>10 Wed</td>
+            <td>One-third of the Semester ends</td>
+          </tr>
+          <tr>
+            <td>14 Sun</td>
+            <td>Yonsei Thanksgiving Day</td>
+          </tr>
+          <tr>
+            <td>17 Wed - 23 Tue</td>
+            <td>Midterm Examinations</td>
+          </tr>
+          <tr>
+            <td>22 Mon- 26 Fri</td>
+            <td>Application Period for Affiliation Change</td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="2">November</th>
+            <td>16 Fri</td>
+            <td>Two-thirds of the Semester ends</td>
+          </tr>
+          <tr>
+            <td>16 Fri</td>
+            <td>Application for General leave of Absence (Enrolled Students) due</td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="7">December</th>
+            <td>03 Mon</td>
+            <td>Application for Leave of Absence for Illness due</td>
+          </tr>
+          <tr>
+            <td>06 Thu</td>
+            <td>Christmas Chapel</td>
+          </tr>
+          <tr>
+            <td>10 Mon - 21 Fri</td>
+            <td>Study Period & Final Examinations</td>
+          </tr>
+          <tr>
+            <td>22 Sat</td>
+            <td>Winter Break begins</td>
+          </tr>
+          <tr>
+            <td>23 Sun - 31 Mon</td>
+            <td>Application Period for Double Major</td>
+          </tr>
+          <tr>
+            <td>25 Tue</td>
+            <td>Christmas</td>
+          </tr>
+          <tr>
+            <td>28 Fri</td>
+            <td>Deadline for Submitting Grades for 2018 Fall Semester</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <ul class="footer__social-links clearfix">
+      <li aria-label="Facebook link">
+        <a href="https://www.facebook.com/UIC.YonseiUniversity" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-facebook-square fa-2x"></i>
+        </a>
+      </li>
+      <li aria-label="Instagram link">
+        <a href="https://www.instagram.com/uicyonsei/" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+      </li>
+    </ul>
+    <div class="footer-flex">
+      <ul class="footer__external-links">
+        <li><a href="#" target="_blank" rel="noopener noreferrer">Career Development Center</a></li>
+        <li><a href="https://dfk.yonsei.ac.kr/" target="_blank" rel="noopener noreferrer">Design Factory Korea</a></li>
+        <li><a href="https://uic.yonsei.ac.kr/writingcenter/default.asp" target="_blank" rel="noopener noreferrer">UIC Writing Center</a></li>
+        <li><a href="https://uic.yonsei.ac.kr/ycsi/default.asp" target="_blank" rel="noopener noreferrer">Yonsei Center for Social Innovation</a></li>
+      </ul>
+      <ul class="footer__internal-links">
+        <li><a href="academic-calendar.html">Academic Calendar</a></li>
+        <li><a href="academic-regulations/academic-regulations.html">Academic Regulations</a></li>
+        <li><a href="health-and-counseling/health-and-counseling.html">Health and Counseling</a></li>
+        <li><a href="maps-and-directions.html">Maps & Directions</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <ul class="footer__legal clearfix">
+      <li>
+        <address>Underwood International College, Yonsei University 50 Yonsei-ro, Seodaemun-gu, Seoul, 03722 Republic of Korea</address>
+      </li>
+      <li>© Underwood International College 2020</li>
+    </ul>
+  </footer>
+  
+  <script src="../js/components/navigation.js"></script>
+</body>
+</html>

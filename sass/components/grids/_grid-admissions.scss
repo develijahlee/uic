@@ -1,0 +1,106 @@
+/* _grid-admissions.scss */
+
+/* ADMISSIONS-PREVIEW.HTML
+-------------------------------------------------- */
+/* APPLYING TO UIC PREVIEW */
+.applying-preview__grid {
+  @include tablet {
+    display: -ms-grid;
+    -ms-grid-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include desktop {
+    -ms-grid-rows: 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  > figure {
+    @include tablet {
+      &:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2; 
+      }
+      &:nth-child(3) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1; 
+      } 
+    }
+    @include desktop {
+      &:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2; 
+      }
+      &:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3; 
+      } 
+    }
+  }
+  > figure:nth-child(3) {
+    @include tablet {
+      position: relative;
+      left: 50%;
+    }
+    @include desktop {
+      position: static;
+    }
+  }
+}
+
+/* APPLICATION.HTML
+-------------------------------------------------- */
+/* APPLYING OVERVIEW */
+.applying-overview__grid {
+  @include tablet {
+    display: -ms-grid;
+    -ms-grid-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1.75em;
+  }
+  @include desktop--lg {
+    margin: 1.75em 8em;
+  }
+  > figure {
+    @include tablet {
+      &:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+      }
+      &:nth-child(3) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+      }
+    }
+  }
+}
+
+/* TRANSFER OVERVIEW */
+.transfer-overview__grid {
+  @include tablet {
+    display: -ms-grid;
+    -ms-grid-rows: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1.75em;
+  }
+  @include desktop--lg {
+    margin: 1.75em 8em;
+  }
+  > figure {
+    @include tablet {
+      &:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+/* buttons.scss */
+.call-to-action {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 14em;
+  background: $primary-bg;
+  box-shadow: 0 0 10px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1);
+  text-align: center;
+  &:link,
+  &:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    background: $primary-bg-dark;
+    transition: background .25s ease-in-out;
+  }
+}
+
+.accordion-trigger {
+  margin: 1em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+.degree-requirements {
+    display: block;
+    margin: 1.75em auto;
+    padding: .25em;
+    max-width: 14em;
+    background: transparent;
+    border: 1px solid #a79d96;
+    cursor: pointer;
+    color: #3277ae;
+  }

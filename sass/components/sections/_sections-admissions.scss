@@ -1,0 +1,454 @@
+/* _sections-admissions.scss */
+
+/* ADMISSIONS-PREVIEW.HTML
+-------------------------------------------------- */
+/* APPLYING TO UIC PREVIEW */
+.applying-preview {
+  background: #fff;
+  > h2 {
+    text-align: center;  
+  }
+  &__grid {
+    margin: 0 0 1.75em 0;
+    padding: 0 1.75em;
+    @include desktop--lg {
+      padding: 0 8em;
+    }
+    > figure {
+      margin: 2em auto 1em auto;
+      padding: 0 1em;
+      max-width: 30em;
+      > img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+      }
+      > figcaption {
+        margin: 1em 0 0 0;
+        > a {
+          text-decoration: none;
+          &:link,
+          &:visited {
+            color: #006cb8;
+          }
+          &:hover,
+          &:focus,
+          &:active {
+            color: #00548f;
+            text-decoration: underline;
+          }
+          > svg {
+            margin: 0 0 0 .25em;
+          }
+          &:hover svg,
+          &:focus svg,
+          &:active svg {
+            margin: 0 0 0 .5em;
+            transition: margin .25s ease;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* APPLICATION.HTML
+-------------------------------------------------- */
+/* APPLYING OVERVIEW */
+/* TRANSFER OVERVIEW */
+.applying-overview,
+.transfer-overview {
+  > h2 {
+    color: #000;
+    text-align: center;
+  }
+  &__grid {
+    > figure {
+      margin: 1.75em;
+      padding: 2em;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15), 0 3px 3px rgba(0, 0, 0, 0.15);
+      > figcaption {
+        margin-top: 1em;
+        text-align: center;
+        > a {
+          text-decoration: none;
+          &:link,
+          &:visited {
+            color: #006cb8;
+          }
+          &:hover,
+          &:focus,
+          &:active {
+            color: #00548f;
+            text-decoration: underline;
+          }
+          > svg {
+            margin: 0 0 0 .25em;
+          }
+          &:hover svg,
+          &:focus svg,
+          &:active svg {
+            margin: 0 0 0 .5em;
+            transition: margin .25s ease;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* APPLYING OVERVIEW */
+.applying-overview {
+  background: #fff;
+}
+
+/* TRANSFER OVERVIEW */
+.transfer-overview {
+  background: #f9f6ef;
+}
+
+/* APPLICATION.HTML
+-------------------------------------------------- */
+.application-guidelines {
+  padding-left: calc(5% + 20px);
+  padding-right: calc(5% + 20px);
+  @include tablet {
+    padding-left: calc(12.5% + 20px);
+    padding-right: calc(12.5% + 20px);
+  }
+  a {
+    display: block;
+    max-width: fit-content;
+    text-decoration: none;
+    &:link, 
+    &:visited {
+      color: #3277ae;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      color: #be0f34;
+    } 
+  }
+  li {
+    line-height: 1.5;
+  }
+}
+
+.application-table {
+  font-size: .9rem;
+  width: 100%;
+  margin-bottom: 1em;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  text-align: center;
+  caption {
+    text-align: left;
+    font-weight: bold;
+  }
+  th {
+    padding: .5em;
+    background-color: #e7ecf4;
+    border: 1px solid #e0e0e0;
+    color: #666;
+  }
+  td {
+    padding: .5em;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    color: #666;
+  }
+}
+
+/* TUITION-AND-SCHOLARSHIPS.HTML
+-------------------------------------------------- */
+/* TUITION */
+/* SCHOLARSHIPS */
+.tuition-guidelines,
+.scholarships-guidelines {
+  padding-left: calc(5% + 20px);
+  padding-right: calc(5% + 20px);
+  @include tablet {
+    padding-left: calc(12.5% + 20px);
+    padding-right: calc(12.5% + 20px);
+  }
+  > h2 {
+    text-align: center;
+  }
+  a {
+    display: block;
+    max-width: fit-content;
+    text-decoration: none;
+    &:link, 
+    &:visited {
+      color: #3277ae;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      color: #be0f34;
+    } 
+  }
+  li {
+    line-height: 1.5;
+  }
+}
+
+.tuition-table {
+  font-size: .9rem;
+  width: 100%;
+  margin-bottom: 1em;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  text-align: center;
+  caption {
+    margin-top: 1em;
+    caption-side: bottom;
+    text-align: left;
+    font-weight: bold;
+  }
+  th {
+    padding: .5em;
+    background-color: #e7ecf4;
+    border: 1px solid #e0e0e0;
+    color: #666;
+  }
+  td {
+    padding: .5em;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    color: #666;
+  }
+}
+
+/* SCHOLARSHIPS */
+.scholarships-guidelines {
+  background: #f9f6ef;
+}
+
+/* HOUSING.HTML
+-------------------------------------------------- */
+.housing-guidelines {
+  > h2 {
+    text-align: center;
+  }
+  a {
+    display: block;
+    max-width: fit-content;
+    text-decoration: none;
+    &:link, 
+    &:visited {
+      color: #3277ae;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      color: #be0f34;
+    } 
+  }
+  li {
+    line-height: 1.5;
+  }
+}
+
+.before-housing-table {
+  padding-left: calc(5% + 20px);
+  padding-right: calc(5% + 20px);
+  @include tablet {
+    padding-left: calc(12.5% + 20px);
+    padding-right: calc(12.5% + 20px);
+  }
+}
+
+.housing-table {
+  font-size: .8rem;
+  width: 100%;
+  margin-bottom: 1em;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  table-layout: fixed;
+  text-align: center;
+  @include tablet {
+    width: auto;
+    margin-left: calc(12.5% + 20px);
+    margin-right: calc(12.5% + 20px);
+  }
+  caption {
+    margin-bottom: 1.5em;
+    padding-left: calc(5% + 20px);
+    padding-right: calc(5% + 20px);
+    font-size: 1.17rem;
+    font-weight: bold;
+    text-align: left;
+    @include tablet {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  th {
+    padding: .5em;
+    background-color: #e7ecf4;
+    border: 1px solid #e0e0e0;
+    color: #666;
+  }
+  td {
+    padding: .5em;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    color: #666;
+    @include tablet {
+      padding: 1.5em;
+    }
+    @include desktop {
+      padding: 2.5em;
+    }
+  }
+}
+
+/* VISA-ALIEN-REGISTRATION.HTML
+-------------------------------------------------- */
+/* VISA REGISTRATION */
+/* ALIEN REGISTRATION */
+.visa-guidelines,
+.alien-guidelines {
+  padding-left: calc(5% + 20px);
+  padding-right: calc(5% + 20px);
+  @include tablet {
+    padding-left: calc(12.5% + 20px);
+    padding-right: calc(12.5% + 20px);
+  }
+  > h2 {
+    text-align: center;
+  }
+  a {
+    display: inline;
+    max-width: fit-content;
+    text-decoration: none;
+    &:link, 
+    &:visited {
+      color: #3277ae;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      color: #be0f34;
+    } 
+  }
+  li {
+    line-height: 1.5;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+/* ALIEN REGISTRATION */
+.alien-guidelines {
+  background: #f9f6ef;
+}
+
+/* BANKING-AND-INSURANCE.HTML
+-------------------------------------------------- */
+/* BANKING */
+/* INSURANCE */
+.banking-guidelines,
+.insurance-guidelines {
+  padding-left: calc(5% + 20px);
+  padding-right: calc(5% + 20px);
+  @include tablet {
+    padding-left: calc(12.5% + 20px);
+    padding-right: calc(12.5% + 20px);
+  }
+  > h2 {
+    text-align: center;
+  }
+  a {
+    display: inline;
+    max-width: fit-content;
+    text-decoration: none;
+    &:link, 
+    &:visited {
+      color: #3277ae;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      color: #be0f34;
+    } 
+  }
+  li {
+    line-height: 1.5;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+/* INSURANCE */
+.insurance-guidelines {
+  background: #f9f6ef;
+}
+
+/* FREQUENTLY-ASKED-QUESTIONS.HTML
+-------------------------------------------------- */
+/* FAQ */
+.faq-guidelines {
+  padding-left: calc(5% + 20px);
+  padding-right: calc(5% + 20px);
+  @include tablet {
+    padding-left: calc(12.5% + 20px);
+    padding-right: calc(12.5% + 20px);
+  }
+  > h2 {
+    text-align: center;
+  }
+  a {
+    display: inline;
+    max-width: fit-content;
+    text-decoration: none;
+    &:link, 
+    &:visited {
+      color: #3277ae;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      color: #be0f34;
+    } 
+  }
+  li {
+    line-height: 1.5;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+@supports (display: flex) {
+/* APPLICATION.HTML
+-------------------------------------------------- */
+/* APPLYING OVERVIEW */
+/* TRANSFER OVERVIEW */
+  .applying-overview,
+  .transfer-overview {
+    &__grid {
+      > figure {
+        display: flex;
+        flex-flow: column;
+        > figcaption {
+          text-align: left;
+        }
+        @include tablet {
+          flex-flow: row;
+          align-items: center;
+          margin: 1em;
+          
+          > figcaption {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+/* _grid-about.scss */
+
+/* STUDENT-ORGANIZATIONS.HTML
+-------------------------------------------------- */
+/* STUDENT-ORGANIZATIONS OVERVIEW */
+.organizations-overview__grid {
+  @include tablet {
+    display: -ms-grid;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1.75em;
+  }
+  @include desktop--lg {
+    margin: 1.75em 8em;
+  }
+  > a {
+    @include tablet {
+      &:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2; 
+      }
+      &:nth-child(3) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1; 
+      } 
+      &:nth-child(4) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2; 
+      }
+      &:nth-child(5) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1; 
+      }
+      &:nth-child(6) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 2; 
+      }
+      &:nth-child(7) {
+        -ms-grid-row: 4;
+        -ms-grid-column: 1; 
+      }
+      &:nth-child(8) {
+        -ms-grid-row: 4;
+        -ms-grid-column: 2; 
+      }
+      &:nth-child(9) {
+        -ms-grid-row: 5;
+        -ms-grid-column: 1; 
+      }
+      &:nth-child(10) {
+        -ms-grid-row: 5;
+        -ms-grid-column: 2; 
+      }
+      &:nth-child(11) {
+        -ms-grid-row: 6;
+        -ms-grid-column: 1; 
+      }
+    }
+  }
+}
